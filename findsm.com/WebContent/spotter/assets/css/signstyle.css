@@ -1,0 +1,70 @@
+ 
+    .sub-header
+    {
+      margin-top: 90px;
+    }
+    .header
+    {
+      top: 0px;
+    }
+    .registernow
+    {
+      width:100%;background-color:#59b671;color:white;border-bottom:1px solid #fff;font-size: 20px;
+    }
+    .registernow:hover
+    {
+      width:100%;background-color:#4bab64;color:white;border-bottom:1px solid #fff;
+    }
+     .signin
+    {
+      width:100%;background-color:#59b671;color:white;border-bottom:1px solid #fff;font-size: 20px;
+    }
+    .signin:hover
+    {
+      width:100%;background-color:#4bab64;color:white;border-bottom:1px solid #fff;
+    }
+    .signindesk
+    {
+        background-color:#59b671;color:white;font-size:20px;height:40px;padding-top:8px;text-align:center;border-radius: 5px;
+    }
+    .registerdesk
+    {
+        background-color:#59b671;color:white;font-size:20px;height:40px;padding-top:8px;text-align: center;border-radius: 5px;
+    }
+    
+
+@media(max-width: 768px){
+  .header
+  {
+    margin-bottom: 0px;
+  }
+
+ .header .wrapper{
+
+  padding: 0px 10px 0px
+}
+.sub-header
+{
+  margin-top: 0px;
+}
+.mobileviewlogo 
+{
+  padding-top: 10px;
+}
+ .signindesk
+    {
+      margin-top: 50px;  
+    }
+    .registerdesk
+    {
+        margin-top: 50px;  
+    }
+    .signinmobiletop
+    {
+      margin-top: 80px;
+    }
+     .registermobiletop
+    {
+      margin-top: 50px;
+    }
+}

@@ -1,0 +1,4397 @@
+./*--gridiconsize*/
+  .resdropdownmenuleft
+  {
+    display: none;
+  }
+  .footersocialiconsdiv
+  {
+    text-align: center;
+  }
+  .footeraboutuscolor,.footercontactcolor{
+  color:#fff;
+ }
+  .footerpropeltreetext
+  {
+    color: white;
+  }
+  #allcategorybutton
+  {
+    width:25%;background:#59b671;color:#fff;
+  }
+  #allcategorybutton:hover
+  {
+    background:#4bab64;
+  }
+  #homepagesliderline
+  {
+    padding-right: 0px;
+
+  }
+  
+  .navtopfixedmenu
+  {
+   width:100%;
+   z-index:1000;
+   height:50px;
+   position:fixed;
+   box-shadow: 0px 3px 6px rgba(0,0,0,.23);
+  display:none;
+  
+   
+  }
+   .iconsearchheader{
+    display:none;
+  }
+  #verticalmenudiv
+  {
+    margin-top:-20px;display:none;
+  }
+  .clothingtextdiv{
+  color:#fff;text-align:center;margin-top:220px;background:black;opacity:0.8;height:40px;
+}
+
+.iconsize
+{
+  font-size: 20px;
+  padding: 10px;
+}
+.listiconsize
+{
+	font-size: 24px;
+	padding:10px 10px 10px 10px;
+  
+}
+.phone
+{
+  font-size:16px;
+  padding-top:5px;
+  padding-left:17px
+}
+.mycontent-left {
+  border-right: 1px dashed #333;
+}
+.verticalline
+{
+  border-left: 1px solid #F0F0F0;
+  line-height: 20px;
+}
+
+
+.social-button1 {
+  color: #474747;
+  display: block;
+  margin-bottom: 10px;
+}
+.social-button1:hover i {
+  border-color:#6095f4 ;
+}
+.social-button1 i {
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  float: left;
+  border-radius: 50%;
+  border: 2px solid gray;
+  color: gray;
+  height: 30px;
+  margin-right: 15px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 27px;
+  width: 30px;
+  position: relative;
+  top: -2px;
+}
+.social-button1:hover i
+{
+  color: #6095f4 ;
+}
+
+.homepagetitle
+{
+  background-color: rgba(0, 0, 0, 0.5);
+display: inline-block;
+font-size: 58px;
+color: #FFF;
+text-align: center;
+margin-bottom: 40px;
+margin-top: 80px;
+padding: 10px;
+}
+.headercategory
+{
+  padding-top: 5px;
+}
+
+.headercategory ul li 
+{
+  display:inline;
+  color: white;
+  font-size: 16px;
+  text-decoration:underline;
+  padding-left: 5px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+.headercategory2 
+{
+  
+  border-top:1px #999 solid;
+  margin: 0;
+  padding-top: 11px;
+  list-style: none;
+ margin-top: -50px;
+}
+
+.headercategory2 ul li 
+{
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  display: inline;
+  padding-right: 20px;
+}
+.headercategory2 ul li a:hover
+{
+
+    border-top: 1px solid #fff;        
+    color:#fff;
+    text-decoration: none;
+    padding-top: 12px;
+}
+.btn.writereview
+{
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  margin-top:20px;
+  width: 100%; 
+  -webkit-transition: all 0.6s ease 0s;
+ 
+}
+.sidebaricon
+{
+  color: #6095fa;
+  padding-left: 25px;
+}
+
+
+
+/*-----------------------------------------*/
+.togglemenu
+{
+  position: fixed;
+  z-index: 1000;
+  height: auto;
+  padding-top: 3px;
+}
+
+
+.slide-menu {
+   transform: translate3d(-250px, 0, 0);
+   position: absolute;
+   width: 250px;
+   background: #fff;
+   color: #222;
+   left: 0;
+   height: 100%;
+   transition: all .4s;
+}
+
+.menu {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: block;
+   text-decoration: none;
+   color: #fff;
+   font-size: 1.1em;
+   padding: 15px;
+   background:#222 ;
+   border-bottom: 1px solid #1e222b;
+   box-shadow: inset 0px 1px 1px #8b9db3;
+}
+
+
+ #map{
+        width:auto;  
+        height:auto;
+        
+      }
+.controls{
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 100px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+.pac-container {
+  font-family: Roboto;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#target {
+        width: 145px;
+      }
+     
+ .headerslide
+ {
+  background-color: black;
+ }
+ .homepagelocation
+ {
+  margin-left: 20px;
+ }
+ .rightslidermenu
+ {
+  width:100%;background:#FEBD69;border-radius:3px;height:36px;
+ }
+  .rightslidermenu:hover
+  {
+    color: #222;
+    background:#EFAF5D;
+  }
+
+   a.addbuttonnavigationexpand {
+  background: none repeat scroll 0 0 #FEBD69;
+  color: #222;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  height: 20px;
+  margin-right: 5px;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 53px;
+  border-radius:3px;
+  width: 90px;
+  z-index: 1001;
+
+}
+.addbuttonaddbuttonnav-header :hover
+{
+  background:#EFAF5D;
+}
+addbuttonnav {
+  background: #202529;
+    opacity: 0.96;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -128em;
+  font-size: 15px;
+  top: 0;
+  width: 127em;
+  z-index: 2000;
+
+  transition: right 0.12s ease-in-out 0s;
+  -webkit-transition: right 0.12s ease-in-out 0s;
+  -moz-transition: right 0.12s ease-in-out 0s;
+  -o-transition: right 0.12s ease-in-out 0s;
+
+}
+.addbuttonnav-expanded addbuttonnav {
+  right: 0;
+}
+
+body.addbuttonnav-expanded {
+  margin-left: 0em;
+  transition: right 0.12s ease-in-out 0s;
+  -webkit-transition: right 0.12s ease-in-out 0s;
+  -moz-transition: right 0.12s ease-in-out 0s;
+  -o-transition: right 0.12s ease-in-out 0s;
+}
+
+#addbuttonnav-close {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+a.addbuttonnavigationexpand:hover {
+  cursor: pointer;
+
+}
+
+a.addbuttonnavigationexpand.fixed {
+  position: fixed;
+}
+
+.addbuttonnav-expanded a.addbuttonnavigationexpand.fixed {
+    right: 0em;
+}
+.addbuttonmenu {
+  padding-top: 12px;
+ 
+
+}
+
+.addbuttonmenu li {
+  border-bottom: 1px solid #323949;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 12px;
+
+}
+
+.addbuttonmenu li a {
+  color: #6F7D8C;
+  text-decoration: none;
+}
+
+.addbuttonmenu li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.addbuttonmenu li .sub-addbuttonnav {
+  border-bottom: 0px;
+  padding: 4px;
+}
+
+.addbuttonmenu a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+    margin-top: 8px;
+}
+
+.addbuttonmenu a:hover .caret {
+  border-top-color: #4f5963;
+}
+
+.addbuttonmenu li.open > a > .caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.addbuttonmenu li.open > a:hover > .caret {
+  border-bottom-color: #4f5963;
+}
+
+.icon:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '\f105';
+}
+
+.addbuttonmenu li > a > span.icon {
+  float: right;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.addbuttonmenu li > a:hover > span.icon {
+  float: right;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+.addbuttoncategorydiv
+{
+  height:300px;right:-200px;
+}
+.addbuttoncategoryone,.addbuttoncategorythree
+{
+  height:150px;color:#FEBD69;text-align:center;border:0.5px solid #7F8083;margin:7px;
+}
+.addbuttoncategoryone:hover
+{
+  background: #009DC7;
+  color: #fff;
+}
+.addbuttoncategorythree:hover 
+{
+   background: #009DC7;
+   color: #fff;
+}
+.addbuttoncategorytwo,.addbuttoncategoryfour
+{
+  height:150px;color:#FEBD69;text-align:center;border:0.5px solid #7F8083;right:-10px;
+}
+.addbuttoncategoryfive
+{
+  height:150px;color:#FEBD69;text-align:center;border:0.5px solid #7F8083;padding-left: 10px;
+}
+.addbuttoncategorytwo:hover
+{
+  background: #009DC7;
+  color: #fff;
+}
+.addbuttoncategoryfour:hover
+{
+  background: #009DC7;
+  color: #fff;
+}
+.addbuttoncategoryonetitle,.addbuttoncategorytwotitle,.addbuttoncategorythreetitle,.addbuttoncategoryfourtitle
+{
+  font-size:25px;padding-top:30px;
+}
+ .mainmemberdiv
+ {
+  height:100px;border:1px solid #f0f0f0;
+ }
+ .memberdivimageone
+ {
+  width:330px;margin-top:8px;
+ }
+ .mainmemberdivonesubtitle
+ {
+  margin-top:-13px;
+
+ }
+ .memberdivtwo
+ {
+  height:70px;border:1px solid #f0f0f0
+ }
+ .memberdivimagetwo
+ {
+  width:48px;margin:10px 14px;
+ }
+ .memberdivtwotitlediv
+ {
+  margin-top: 10px;
+ }
+ .memberdivtwotitle
+ {
+  margin-top:13px;
+
+ }
+ .memberbuttonmaindiv
+ {
+  height: 50px;
+ }
+ .memberbuttonmaindivone,.memberbuttonmaindivone
+ {
+  height:50px;text-align:center;
+ }
+ .memberbuttonone{
+  margin-top:12px;
+ }
+ .memberbuttontwo{
+  margin:12px 26px;
+ }
+ .uk-dropdown,.uk-dropdown-small,.uk-dropdown-flip
+ {
+  display: none;
+ }
+ #membertesting
+ {
+  height:300px;width:300px;
+  display: none;
+ }
+.clothingtext
+{
+ font-size:17px;padding-top:7px;
+}
+.clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:36px;margin-top:-32px;margin-left: 15px;width:90%;
+}
+
+
+.clothingtext
+{
+  font-size:16px;margin-top:3px;color:#fff;
+}
+.artstext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.professionaltext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.foodtext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.businessestext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.legaltext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.personaltext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+
+.pettext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.clothingmaindiv2
+{
+margin-top:20px;
+}
+#footericons
+{
+  height:45px;width:45px;font-size:25px;padding-top:7px;;border:2px solid #fff
+}
+#categoryeffects :hover
+{
+  
+z-index:-1;
+opacity: 0.6;
+transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+
+}
+
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 130px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 30px;
+}
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin-left: -70px;
+}
+.itworkstitle
+{
+  border-bottom:1px solid #f0f0f0;margin:20px;padding:30px 15px 15px 15px;
+}
+.itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 130px;margin-top:-15px;
+}
+
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 30px;margin-top:-15px;
+}
+
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin-left: -70px;margin-top:-15px;
+}
+.findsmsec
+{
+  background:#fff;height:280px;
+}
+.findsmtitlesec
+{
+  padding-bottom:25px;
+}
+.headerhomeicon
+{
+  margin-top:10px;font-size:30px;color:#fff
+}
+.joinfindsmbutton
+{
+  width:50%;background:#EF8F14;color:#222;
+}
+.joinfindsmbutton:hover
+{
+  background:#E8880C;font-weight: bold;
+}
+
+.bannerdivone
+{
+  background:#fff;height:240px;top:160px;opacity:0.9;right:-150px;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:240px;top:160px;opacity:0.9;left:-150px;
+}
+.bannerimageicondiv 
+{
+  padding-top:55px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:30px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 10px;
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:20px; 
+}
+
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:20px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:20px;
+}
+
+.loactionsearchdiv
+{
+  margin-left:60px;margin-right:-30px;
+}
+.productsearchbuttondiv
+{
+ margin-left:-80px;
+}
+.productsearchbutton
+{
+  background-color:#FEBD69;color:black;border:1px solid #222;
+}
+.productsearchbuttondiv :hover
+{
+  background-color:#EFA647;color:black;
+}
+.allcategorybutton
+{
+  width:50%;background:#FEBD69;color:#222;border-radius: 3px;
+}
+.allcategorybuttondiv 
+{
+ text-align:center;padding-top:60px;
+}
+.allcategorybuttondiv :hover
+{
+ background:#EFA647;
+}
+
+.tipsdivone :hover
+{
+  opacity: 0.8
+}
+.locationicondiv
+{
+  color:#fff;font-size:30px;padding-top:10px;
+}
+#locationdropdown
+{
+ margin-left: -50px;
+}
+.popularsearchtext
+{
+  color:white;padding-top:20px;font-size:25px;font-weight:normal;
+}
+@media(max-width: 1834px){
+  .bannerdivone
+{
+  background:#fff;height:190px;top:190px;opacity:0.9;width: 36%;margin-left: -100px;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:190px;opacity:0.9;width:36%;margin-left: 80px;
+}
+.bannerimageicondiv 
+{
+  padding-top:55px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:20px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+
+}
+@media(max-width: 1700px){
+
+ 
+  .addbuttoncategorydiv
+  {
+   
+ margin-left: 135px;
+  }
+  }
+  @media(max-width: 1480px){
+  .bannerdivone
+{
+  background:#fff;height:190px;top:190px;opacity:0.9;width: 36%;margin-left: -140px;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:190px;opacity:0.9;width:36%;margin-left: 120px;
+}
+.bannerimageicondiv 
+{
+  padding-top:55px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:20px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+}
+ @media(max-width: 1225px){
+  .bannerdivone
+{
+  background:#fff;height:190px;top:190px;opacity:0.9;width: 38%;margin-left: -170px;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:190px;opacity:0.9;width:38%;margin-left: 350px;
+}
+.bannerimageicondiv 
+{
+  padding-top:55px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:20px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+}
+@media(max-width: 1165px){
+  .bannerdivone
+{
+  background:#fff;height:200px;top:190px;opacity:0.9;width: 38%;margin-left: -170px;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:200px;top:190px;opacity:0.9;width:38%;margin-left: 330px;
+}
+.bannerimageicondiv 
+{
+  padding-top:55px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:20px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+}
+ @media (max-width: 1199px){
+  
+     .footersocialiconsdiv
+  {
+   width: 1170px;
+  }
+  
+  }
+  @media(max-width: 1500px){
+
+ 
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 185px;
+  }
+  }
+   @media(max-width: 1328px){
+
+ 
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 335px;
+  }
+  }
+ @media (max-width: 1199px){
+   #main-menu .navbar .navbar-nav > li > a
+  {
+    padding: 0 17px;
+  }
+   .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 15px;width:88%;
+}
+
+
+.clothingtext
+{
+  font-size:16px;margin-top:-1px;color:#fff;
+}
+.artstext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.professionaltext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.foodtext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.businessestext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.legaltext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.personaltext
+{
+ font-size:16px;margin-top:-2px;color:#fff;
+}
+
+.pettext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 60px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 30px;
+}
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 0px;
+}
+.itworkstitle
+{
+  border-bottom:1px solid #f0f0f0;margin:20px;padding:30px 15px 15px 15px;
+}
+.itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 60px;margin-top:-15px;
+}
+
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 30px;margin-top:-15px;
+}
+
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 0px;margin-top:-15px;
+}
+.findsmtitlesec
+{
+  padding-bottom:0px;
+}
+}
+  @media(max-width: 1100px){
+
+  #main-menu .navbar .navbar-nav > li > a
+  {
+    padding: 0 17px;
+  }
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 385px;
+  }
+    .footericonsmain,.footer-bottom
+  {
+     margin-left: -120px;
+  }
+  }
+@media(max-width: 1086px){
+	.navtopfixedmenu{
+	top:11px;
+	}
+	}
+  @media(max-width: 1038px){
+     #main-menu .navbar .navbar-nav > li > a
+  {
+    padding: 0 17px;
+  }
+  .bannerdivone
+{
+  background:#fff;height:200px;top:190px;opacity:0.9;width: 39%;margin-left: -190px;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:200px;top:190px;opacity:0.9;width:39%;margin-left: 320px;
+}
+.bannerimageicondiv 
+{
+  padding-top:55px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:20px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+}
+  @media(max-width: 1024px){
+
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 425px;
+  }
+  #main-menu .navbar .navbar-nav > li > a
+  {
+    padding: 0 17px;
+  }
+  .footericonsmain,.footer-bottom
+  {
+     margin-left: -200px;
+  }
+  .itworksmaindiv
+  {
+     margin-left: -60px;
+  }
+ 
+  }
+@media(max-width: 991px){
+	.navtopfixedmenu{
+	top:-61px;
+	}
+  a.addbuttonnavigationexpand {
+  background: none repeat scroll 0 0 #FEBD69;
+  color: #222;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  height: 20px;
+  margin-right: 5px;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 50px;
+  border-radius:3px;
+  width: 90px;
+  z-index: 1001;
+ 
+
+}
+
+  addbuttonnav {
+   width: 90em;
+  right: -128em;
+  }
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 120px;
+  }
+  .addbuttoncategoryonetitle,.addbuttoncategorytwotitle,.addbuttoncategorythreetitle,.addbuttoncategoryfourtitle
+  {
+    font-size: 22px;
+  }
+   .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 15px;width:85%;
+}
+
+
+.clothingtext
+{
+  font-size:14px;margin-top:-8px;color:#fff;
+}
+.artstext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.professionaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.foodtext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.businessestext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.legaltext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.personaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+
+.pettext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin-left: -80px; 
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;
+}
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 140px; 
+}
+.itworkstitle
+{
+  border-bottom:1px solid #f0f0f0;margin:20px;padding:30px 15px 15px 15px;
+}
+.itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin-left: -80px; margin-top:-15px;
+}
+
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin-top:-15px;
+}
+
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin-left: 140px; margin-top:-15px;
+}
+
+
+.bannerdivone
+{
+  background:#fff;height:175px;top:110px;opacity:0.9;margin-left: -105px;width: 75%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:175px;top:125px;opacity:0.9;margin-left: 278px;width:75%;
+}
+.bannerimageicondiv 
+{
+  padding-top:55px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:30px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+
+.loactionsearchdiv
+{
+  margin-left:0px;margin-right:0px;margin-bottom: 5px;
+}
+.productsearchbuttondiv
+{
+ margin-left:0px;
+}
+.productsearchbutton
+{
+  background-color:#FEBD69;color:black;border:1px solid #222;
+  width: 100%;
+  margin-top: 5px;
+}
+.locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -650px;
+}
+.locationiconsubdiv
+{
+   color:#222;font-size:30px;margin:45px -650px;
+}
+ .footericonsmain,.footer-bottom
+  {
+     margin-left: 0px;
+  }
+  .itworksmaindiv
+  {
+     margin-left: 0px;
+  }
+   .loactionsearchdiv,.locationcategorydiv,.productsearchbuttondiv,.homepagetitle
+  {
+    margin-left: -30px;
+  }
+  .popularsearchtext,.headercategory, .headercategory2
+  {
+    margin-left: -50px;
+  }
+      #allcategorybutton
+  {
+    width: 50%;
+  }
+  #homepagesliderline
+  {
+    padding-right: 15px;
+  }
+.footersocialiconsdiv
+    {
+      width: 1000px;
+    }
+  }
+  @media(max-width: 967px){
+     .footersocialiconsdiv
+    {
+      width: 900px;
+    }
+
+
+.bannerdivone
+{
+  background:#fff;height:175px;top:80px;opacity:0.9;margin-left: -130px;width: 75%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:175px;top:100px;opacity:0.9;margin-left: 247px;width:75%;
+}
+.bannerimageicondiv 
+{
+  padding-top:55px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:30px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+ .loactionsearchdiv,.locationcategorydiv,.productsearchbuttondiv,.homepagetitle
+  {
+    margin-left: 0px;
+  }
+  .popularsearchtext,.headercategory, .headercategory2
+  {
+    margin-left: 0px;
+  }
+  }
+   @media(max-width: 937px){
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -600px;
+}
+
+   }
+  @media(max-width: 900px){
+.itworksone
+{
+  background: #fff;height: 280px;width: 260px;margin-left: -50px; 
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 260px;
+}
+.itworksthree
+{
+  background: #fff;height: 280px;width: 260px;margin-left: 110px; 
+}
+.itworkstitle
+{
+  border-bottom:1px solid #f0f0f0;margin:20px;padding:30px 15px 15px 15px;
+}
+.itworksone:hover
+{
+  background: #fff;height: 280px;width: 260px;margin-left: -50px; 
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 260px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 260px;margin-left: 110px; 
+}
+  }
+@media(max-width: 878px){
+
+  
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 215px;
+  }
+      .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -550px;
+}
+  }
+@media(max-width: 837px){
+
+ 
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 180px;
+  }
+  .bannerdivone
+{
+  background:#fff;height:175px;top:80px;opacity:0.9;margin-left: -135px;width: 75%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:175px;top:95px;opacity:0.9;margin-left: 232px;width:75%;
+}
+.bannerimageicondiv 
+{
+  padding-top:55px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:12px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+      .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -520px;
+}
+  .footersocialiconsdiv
+    {
+      width: 500px;
+    }
+  }
+   @media(max-width: 824px){
+.itworksone
+{
+  background: #fff;height: 280px;width: 240px;margin-left: -30px; 
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 240px;
+}
+.itworksthree
+{
+  background: #fff;height: 280px;width: 240px;margin-left: 90px; 
+}
+.itworkstitle
+{
+  border-bottom:1px solid #f0f0f0;margin:20px;padding:30px 15px 15px 15px;
+}
+.itworksone:hover
+{
+ background: #fff;height: 280px;width: 240px;margin-left: -30px; 
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 240px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 240px;margin-left: 90px; 
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -490px;
+}
+  }
+ @media(max-width: 800px){
+
+  .footer-bottom
+ {
+  margin-left: -40px;
+ }
+
+ }
+@media(max-width: 768px){
+  .loactionsearchdiv,.locationcategorydiv,.productsearchbuttondiv,.homepagetitle
+  {
+    margin-left: -20px;
+  }
+  .popularsearchtext,.headercategory
+  {
+    margin-left: -60px;
+  }
+  
+  .headercategory2
+  {
+    margin-left: -50px;
+  }
+  #home-slider
+  {
+     margin-left: 0px;
+  }
+ .trendingcategorydiv,.trendingbusinessesdiv,.whyfindsmdiv,.joinfindsmdiv,.articalesdiv
+ {
+  margin-left: 0px;
+ }
+ .footer-bottom
+ {
+  margin-left: -40px;
+ }
+
+  #allcategorybutton
+  {
+    width: 50%;
+  }
+}
+@media(max-width: 767px){
+   .loactionsearchdiv,.locationcategorydiv,.productsearchbuttondiv,.homepagetitle
+  {
+    margin-left: 0px;
+  }
+  .headercategory,.popularsearchtext
+  {
+    margin-left: 0px;
+  }
+.headercategory2
+  {
+    margin-left: 0px;
+  }
+  #home-slider
+  {
+     margin-left: 0px;
+  }
+  .footer-bottom
+ {
+  margin-left: 0px;
+ }
+  addbuttonnav {
+   width: 90em;
+   right: -128em;
+  }
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 50%;
+    margin-left: 425px;
+
+  }
+
+  .addbuttoncategoryonetitle,.addbuttoncategorytwotitle,.addbuttoncategorythreetitle,.addbuttoncategoryfourtitle
+  {
+    font-size: 26px;
+  }
+  .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 15px;width:81%;
+}
+
+
+.clothingtext
+{
+  font-size:16px;margin-top:2px;color:#fff;
+}
+.artstext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.professionaltext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.foodtext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.businessestext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.legaltext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.personaltext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+
+.pettext
+{
+ font-size:16px;margin-top:8px;color:#fff;
+}
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+.clothingmaindiv1
+{
+  margin-left: 35px;
+}
+.clothingmaindiv2
+{
+margin-top:20px;margin-left:35px;
+}
+.itworksmain
+{
+  margin-left: 210px;
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+  .bannerdivone
+{
+  background:#fff;height:180px;top:60px;opacity:0.9;margin-left: -90px;width: 85%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:180px;top:80px;opacity:0.9;margin-left: 211px;width:85%;
+}
+.bannerimageicondiv 
+{
+  margin-top:10px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:20px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+ 
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -470px;
+}
+ .footersocialiconsdiv
+    {
+      width: 740px;
+    }
+
+  }
+  
+  @media (max-width: 747px){
+
+.clothingmaindiv1
+{
+  margin-left: 35px;
+}
+.clothingmaindiv2
+{
+margin-top:20px;margin-left:35px;
+}
+  .bannerdivone
+{
+  background:#fff;height:180px;top:60px;opacity:0.9;margin-left: -90px;width: 85%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:180px;top:80px;opacity:0.9;margin-left: 211px;width:85%;
+}
+.bannerimageicondiv 
+{
+  margin-top:10px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 4px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -460px;
+}
+}
+
+  @media(max-width: 750px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 50%;
+    margin-left: 430px;
+  }
+
+     .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:36px;margin-top:-32px;margin-left: 15px;width:83%;
+}
+
+
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+
+  }
+   @media(max-width: 738px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 45%;
+    margin-left:470px;
+  }
+
+     .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:36px;margin-top:-32px;margin-left: 15px;width:85%;
+}
+
+.clothingtext
+{
+ font-size:16px;margin-top:3px;color:#fff;
+}
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+  .bannerdivone
+{
+  background:#fff;height:180px;top:60px;opacity:0.9;margin-left: -90px;width: 85%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:180px;top:80px;opacity:0.9;margin-left: 211px;width:85%;
+}
+.bannerimageicondiv 
+{
+  margin-top:10px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 4px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -12px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -450px;
+}
+  }
+  @media (max-width: 733px){
+
+.clothingmaindiv1
+{
+  margin-left: 35px;
+}
+.clothingmaindiv2
+{
+margin-top:20px;margin-left:35px;
+}
+}
+
+  @media(max-width: 724px){
+
+     .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:36px;margin-top:-32px;margin-left: 15px;width:87%;
+}
+
+
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -430px;
+}
+    .footersocialiconsdiv
+    {
+      width: 700px;
+    }
+   
+  }
+
+  @media(max-width: 708px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 45%;
+    margin-left:490px;
+  }
+
+     .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:36px;margin-top:-32px;margin-left: 15px;width:89%;
+}
+
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -400px;
+}
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+  }
+   @media (max-width: 700px){
+
+.clothingmaindiv1
+{
+  margin-left: 35px;
+}
+.clothingmaindiv2
+{
+margin-top:20px;margin-left:35px;
+}
+
+}
+   @media(max-width: 696px){
+
+    .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:36px;margin-top:-32px;margin-left: 15px;width:90%;
+}
+
+   }
+  @media (max-width: 677px){
+
+.clothingmaindiv1
+{
+  margin-left: 33px;
+}
+.clothingmaindiv2
+{
+margin-top:20px;margin-left:33px;
+}
+  .bannerdivone
+{
+  background:#fff;height:180px;top:60px;opacity:0.9;margin-left: -90px;width: 85%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:180px;top:80px;opacity:0.9;margin-left: 211px;width:85%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 4px;
+ 
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -390px;
+}
+}
+  @media(max-width: 674px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 40%;
+    margin-left:540px;
+  }
+
+.clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:36px;margin-top:-32px;margin-left: 15px;width:90%;
+}
+
+
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+  .footersocialiconsdiv
+    {
+      width: 650px;
+    }
+  }
+ 
+
+@media (max-width: 669px){
+
+
+
+  .bannerdivone
+{
+  background:#fff;height:180px;top:60px;opacity:0.9;margin-left: -120px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:180px;top:80px;opacity:0.9;margin-left: 181px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 4px;
+  margin-left: -2px;
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -380px;
+}
+}
+
+@media (max-width: 657px){
+
+.clothingmaindiv1
+{
+  margin-left: 30px;
+}
+.clothingmaindiv2
+{
+margin-top:20px;margin-left:30px;
+}
+.itworksmain
+{
+  margin-left: 160px;
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .bannerdivone
+{
+  background:#fff;height:180px;top:60px;opacity:0.9;margin-left: -120px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:180px;top:80px;opacity:0.9;margin-left: 181px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 4px;
+  margin-left: -2px;
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -370px;
+}
+}
+
+@media (max-width: 637px){
+
+.clothingmaindiv1
+{
+  margin-left: 20px;
+}
+.clothingmaindiv2
+{
+margin-top:20px;margin-left:20px;
+}
+
+  .bannerdivone
+{
+  background:#fff;height:190px;top:60px;opacity:0.9;margin-left: -120px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:80px;opacity:0.9;margin-left: 181px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 4px;
+  margin-left: -2px;
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -350px;
+}
+}
+@media(max-width: 620px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 35%;
+     margin-left:610px;
+  }
+ 
+     .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:36px;margin-top:-34px;margin-left: 15px;width:89%;
+}
+
+
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+.itworksmain
+{
+  margin-left: 140px;
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+ .bannerdivone
+{
+  background:#fff;height:190px;top:50px;opacity:0.9;margin-left: -120px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:80px;opacity:0.9;margin-left: 181px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 4px;
+  margin-left: -2px;
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -340px;
+}
+ .footersocialiconsdiv
+    {
+      width: 610px;
+    }
+   
+  }
+  @media(max-width: 597px){
+ .bannerdivone
+{
+  background:#fff;height:190px;top:50px;opacity:0.9;margin-left: -120px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:85px;opacity:0.9;margin-left: 181px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 4px;
+  margin-left: -2px;
+
+}
+.bannerheadersubtitletwo
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  margin-top: -10px;
+
+  
+}
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -300px;
+}
+  }
+   @media(max-width: 568px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 30%;
+     margin-left:660px;
+  }
+  .clothingtext
+{
+ font-size:17px;padding-top:7px;
+}
+     .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:36px;margin-top:-34px;margin-left: 15px;width:88%;
+}
+
+.clothingtext
+{
+ font-size:16px;margin-top:3px;color:#fff;
+}
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+.itworksmain
+{
+  margin-left: 120px;
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+ .bannerdivone
+{
+  background:#fff;height:190px;top:50px;opacity:0.9;margin-left: -120px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:85px;opacity:0.9;margin-left: 181px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:45px -270px;
+}
+.footersocialiconsdiv
+    {
+      width: 540px;
+    }
+   
+  }
+
+  @media (max-width: 521px){
+     .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 15px;width:88%;
+}
+
+
+.clothingtext
+{
+  font-size:15px;margin-top:2px;color:#fff;
+}
+.artstext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.professionaltext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.foodtext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.businessestext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.legaltext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.personaltext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+
+.pettext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.itworksmain
+{
+  margin-left: 90px;
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+ .bannerdivone
+{
+  background:#fff;height:190px;top:50px;opacity:0.9;margin-left: -120px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:85px;opacity:0.9;margin-left: 181px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:43px -200px;
+}
+  }
+   @media(max-width: 508px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 26%;
+      margin-left:730px;
+  }
+ 
+     .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 15px;width:88%;
+}
+
+
+.clothingtext
+{
+  font-size:15px;margin-top:2px;color:#fff;
+}
+.artstext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.professionaltext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.foodtext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.businessestext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.legaltext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+.personaltext
+{
+ font-size:15px;margin-top:-1px;color:#fff;
+}
+
+.pettext
+{
+ font-size:15px;margin-top:8px;color:#fff;
+}
+ 
+
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+.backgroundbanner
+{
+  
+  height:auto;
+}
+
+ .bannerdivone
+{
+  background:#fff;height:190px;top:50px;opacity:0.9;margin-left: -120px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:85px;opacity:0.9;margin-left: 181px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+.footersocialiconsdiv
+    {
+      width: 500px;
+    }
+
+  }
+  @media(max-width: 491px){
+.personaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+  }
+@media(max-width: 480px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 22%;
+    margin-left:760px;
+  }
+      .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:36px;margin-top:-34px;margin-left: 15px;width:86%;
+}
+
+.clothingtext
+{
+  font-size:14px;margin-top:-2px;color:#fff;
+}
+.artstext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.professionaltext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.foodtext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.businessestext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.legaltext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.personaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+
+.pettext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+.itworksmain
+{
+  margin-left: 70px;
+  margin-right: 0px;
+
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+ .bannerdivone
+{
+  background:#fff;height:190px;top:60px;opacity:0.9;margin-left: -120px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:85px;opacity:0.9;margin-left: 181px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:43px -170px;
+}
+.footersocialiconsdiv
+    {
+      width: 465px;
+    }
+  }
+@media(max-width: 444px){
+
+  .footersocialiconsdiv
+    {
+      width: 430px;
+    }
+      .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 15px;width:85%;
+}
+
+
+.clothingtext
+{
+  font-size:14px;margin-top:-8px;color:#fff;
+}
+.artstext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.professionaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.foodtext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.businessestext
+{
+ font-size:14px;margin-top:2px;color:#fff;
+}
+.legaltext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.personaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+
+.pettext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+.itworksmain
+{
+  margin-left: 35px;
+  margin-right: 0px;
+
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+ .bannerdivone
+{
+  background:#fff;height:190px;top:60px;opacity:0.9;margin-left: -120px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:190px;top:80px;opacity:0.9;margin-left: 181px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:20%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:20%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:40%;margin-top:5px;
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:43px -100px;
+}
+}
+@media(max-width: 427px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 20%;
+     margin-left:800px;
+  }
+   .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 15px;width:85%;
+}
+
+
+.clothingtext
+{
+  font-size:14px;margin-top:-8px;color:#fff;
+}
+.artstext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.professionaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.foodtext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.businessestext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.legaltext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.personaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+
+.pettext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:43px -100px;
+}
+ .footersocialiconsdiv
+    {
+      width: 380px;
+    }
+  }
+  @media(max-width: 422px){
+
+    .artstext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:43px -100px;
+}
+  }
+  @media(max-width: 420px){
+
+    .businessestext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.itworksmain
+{
+  margin-left: 35px;
+  margin-right: 0px;
+
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+ .bannerdivone
+{
+  background:#fff;height:210px;top:30px;opacity:0.9;margin-left: -130px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:210px;top:60px;opacity:0.9;margin-left: 171px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:43px -100px;
+}
+.allcategorybutton
+{
+  width: 100%;
+}
+  }
+  @media(max-width: 385px){
+
+  .addbuttoncategorydiv
+  {
+    
+    margin-left: 820px;
+  }
+    .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 15px;width:82%;
+}
+
+
+.clothingtext
+{
+  font-size:14px;margin-top:-8px;color:#fff;
+}
+.artstext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.professionaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.foodtext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.businessestext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.legaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.personaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+
+.pettext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+.itworksmain
+{
+  margin-left: 17px;
+  margin-right: 0px;
+
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .bannerdivone
+{
+  background:#fff;height:210px;top:30px;opacity:0.9;margin-left: -130px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:210px;top:60px;opacity:0.9;margin-left: 171px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:43px -100px;
+}
+.material-icons.md-light
+    {
+     width: 2px;
+    }
+.footersocialiconsdiv
+    {
+      width: 350px;
+    }
+  }
+    @media(max-width: 375px){
+      .legaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.itworksmain
+{
+  margin-left: 5px;
+  margin-right: 0px;
+
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .bannerdivone
+{
+  background:#fff;height:210px;top:30px;opacity:0.9;margin-left: -130px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:210px;top:60px;opacity:0.9;margin-left: 171px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+     .locationiconsubdivcondiv
+{
+  color:#59B671;font-size:30px;margin:43px -100px;
+}
+
+    }
+   @media(max-width: 350px){
+
+  .addbuttoncategorydiv
+  {
+    
+   margin-left:840px;
+  }
+  .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 15px;width:82%;
+}
+
+
+.clothingtext
+{
+  font-size:14px;margin-top:-8px;color:#fff;
+}
+.artstext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.professionaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.foodtext
+{
+ font-size:14px;margin-top:1px;color:#fff;
+}
+.businessestext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.legaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.personaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+
+.pettext
+{
+ font-size:14px;margin-top:8px;color:#fff;
+}
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+.itworksmain
+{
+  margin-left: 0px;
+  margin-right: -13px;
+
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+ .bannerdivone
+{
+  background:#fff;height:230px;top:12px;opacity:0.9;margin-left: -130px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:230px;top:25px;opacity:0.9;margin-left: 171px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+.footersocialiconsdiv
+    {
+      width: 300px;
+    }
+/*     .headerhomeicon */
+/* { */
+/*   margin-top:10px;font-size:30px;color:#fff */
+/* } */
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:43px -100px;
+}
+.material-icons.md-light
+    {
+     width: 1px;
+    }
+  }
+  @media(max-width: 328px){
+.foodtext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.itworksmain
+{
+  margin-left: -8px;
+  margin-right: -13px;
+
+}
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+  .bannerdivone
+{
+  background:#fff;height:230px;top:12px;opacity:0.9;margin-left: -130px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:230px;top:25px;opacity:0.9;margin-left: 171px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:3px -120px;
+}
+.material-icons.md-light
+    {
+     width: 1px;margin-top: -180px;left: -50px;
+    }
+
+  }
+  @media(max-width: 320px){
+
+    .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 18%;
+    margin-left: 880px;
+  }
+   .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 15px;width:77%;
+}
+
+
+.clothingtext
+{
+  font-size:14px;margin:-8px -5px;color:#fff;
+}
+.artstext
+{
+ font-size:14px;margin:-1px -15px;color:#fff;
+}
+.professionaltext
+{
+ font-size:14px;margin:-1px -5px;color:#fff;
+}
+.foodtext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.businessestext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.legaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.personaltext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+
+.pettext
+{
+ font-size:14px;margin:-1px -5px;color:#fff;
+}
+.trendingcategoryseven
+{
+  margin-top: 20px;
+}
+ 
+    .footersocialiconsdiv
+    {
+      width: 280px;
+    }
+
+.itworksone
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksmain
+{
+  margin-left: -13px;
+  margin-right: -13px;
+
+}
+.itworksthree
+{
+  background: #fff;height: 280px;width: 280px;margin-left:5px;
+}
+  .itworksone:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstwo:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworksthree:hover
+{
+  background: #fff;height: 280px;width: 280px;margin:5px;
+}
+.itworkstitle
+{
+  border-bottom:1px solid #f0f0f0;margin:20px;padding:30px 15px 15px 15px;
+}
+.footericonsmain
+{
+  margin-right: -25px;
+}
+#footericons
+{
+  height:40px;width:40px;font-size:20px;padding-top:5px;;border:2px solid #fff;
+}
+
+
+ . .bannerdivone
+{
+  background:#fff;height:230px;top:12px;opacity:0.9;margin-left: -130px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:230px;top:25px;opacity:0.9;margin-left: 171px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+
+a.addbuttonnavigationexpand {
+  
+  width: 85px;
+ }
+ .material-icons.md-light
+    {
+     width: 1px;
+    }
+
+}
+  @media(max-width: 309px){
+
+   .clothingdiv
+{
+  color:#fff;text-align:center;background:black;opacity:0.9;height:37px;margin-top:-34px;margin-left: 13px;width:81%;
+}
+
+.pettext
+{
+ font-size:14px;margin-top:-1px;color:#fff;
+}
+.footericonsmain
+{
+  margin-right: 0px;
+}
+/*     .headerhomeicon */
+/* { */
+/*   margin-top:14px;font-size:22px;color:#fff */
+/* } */
+
+  .bannerdivone
+{
+  background:#fff;height:230px;top:12px;opacity:0.9;margin-left: -130px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:230px;top:25px;opacity:0.9;margin-left: 171px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:15px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 2px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+     .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:3px -120px;
+}
+.material-icons.md-light
+    {
+     width: 1px;
+    }
+  }
+  @media(max-width: 299px){
+
+ .bannerdivone
+{
+  background:#fff;height:240px;top:10px;opacity:0.9;margin-left: -130px;width: 89%;
+}
+
+.bannerdivtwo
+{
+  background:#fff;height:240px;top:17px;opacity:0.9;margin-left: 171px;width:89%;
+}
+.bannerimageicondiv 
+{
+  margin-top:0px;
+}
+.bannerheadertitle
+{
+  float:left;color:#222;padding-top:10px;font-weight:bold;font-size: 14px;
+}
+
+.bannerheadersubtitle
+{
+  float:left;
+  color:#222;
+  font-size:15px;
+  padding-top: 0px;
+  margin-left: -2px;
+
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:5px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:5px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:5px;
+}
+
+.banneraddbutton
+{
+  background:#FEBD69;float:left;width:30%;margin-top:0px; 
+}
+.bannerfindbutton
+{
+  background:#FEBD69;float:left;width:30%;margin:0px 10px;
+}
+.banneraddbusinessbutton
+{
+  background:#FEBD69;float:left;width:60%;margin-top:0px;
+}
+    .locationicondiv
+{
+  color:#59B671;font-size:30px;margin:3px -100px;
+}
+}
+@media(max-width: 275px){
+
+.material-icons.md-light
+    {
+     width: 1px;
+    }
+}
+
+<!--/addbutton css-->
+
+
+@media(max-width: 1224px){
+    .listiconsize
+    {
+     font-size: 20px;
+  padding:10px 0px 10px 10px;
+  margin-left: 0px;
+  
+    }
+  .phone
+{
+  font-size:20px;
+  padding-top:5px;
+  padding-left:0px;
+  margin-left:5px;
+}
+.homepagetitle
+{
+  font-size: 48px;
+}
+.header .wrapper{
+
+  padding: 12px 10px 6px
+}
+
+
+  }
+
+  
+	@media(max-width: 968px){
+    .listiconsize
+    {
+     font-size: 25px;
+  padding:10px 0px 10px 10px;
+  margin-left: 0px;
+  
+    }
+  .phone
+{
+  font-size:20px;
+  padding-top:5px;
+  padding-left:0px;
+  margin-left:11px;
+}
+.header
+{
+   position: fixed;
+}
+.background
+{
+  top:0;
+}
+.homepagetitle
+{
+  font-size: 44px;
+}
+.sub-header
+ {
+  margin-top: 0px;
+ }
+.listingnavdrop
+ {
+  margin-left:100px;
+ }
+ .header .wrapper{
+
+  padding: 12px 10px 6px
+}
+
+@media (max-width: 781px){
+  a.addbuttonnavigationexpand {
+ 
+  font-size: 12px;
+  font-weight: bold;
+  height: 20px;
+  margin-right: 5px;
+  padding: 0.6em 1em 2em;
+ 
+  top: 56px;
+  
+  width: 85px;
+  
+
+
+}
+}
+  @media(max-width: 768px){
+    a.addbuttonnavigationexpand {
+ 
+  font-size: 12px;
+  font-weight: bold;
+  height: 20px;
+  margin-right: 5px;
+  padding: 1em 1.6em 2em;
+ 
+  top: 51px;
+  
+  width: 85px;
+  
+
+
+}
+    .listiconsize
+    {
+     font-size: 35px;
+  padding:0px 15px 10px 10px;
+  margin-left: 100px;
+  
+    }
+  .phone
+{
+  font-size:20px;
+  padding-top:10px;
+  padding-left:25px;
+  margin-left:210px;
+}
+
+.header
+{
+  position:fixed;
+}
+.background
+{
+  top:0;
+}
+.homepagetitle
+{
+  font-size: 48px;
+}
+.header .wrapper{
+
+  padding: 0px 10px 0px
+}
+.homepagelocation{
+ 
+  margin-left: 0px;
+ }
+ .searchsection
+ {
+  margin-top: 50px;
+ }
+  }
+  @media(max-width: 738px){
+    .listiconsize
+    {
+     font-size: 35px;
+  padding:0px 15px 10px 10px;
+  margin-left: 80px;
+  
+    }
+  .phone
+{
+  font-size:20px;
+  padding-top:10px;
+  padding-left:25px;
+  margin-left:170px;
+}
+   @media(max-width: 690px){
+    .listiconsize
+    {
+     font-size: 35px;
+  padding:0px 15px 10px 10px;
+  margin-left: 80px;
+  
+    }
+  .phone
+{
+  font-size:20px;
+  padding-top:10px;
+  padding-left:25px;
+  margin-left:170px;
+}
+ @media(max-width: 594px){
+    .listiconsize
+    {
+     font-size: 35px;
+  padding:0px 15px 10px 10px;
+  margin-left: 60px;
+  
+    }
+  .phone
+{
+  font-size:20px;
+  padding-top:10px;
+  padding-left:25px;
+  margin-left:130px;
+}
+}
+.header
+{
+  position:fixed;
+}
+.background
+{
+  top:0;
+}
+.homepagetitle
+{
+  font-size: 44px;
+}
+.header .wrapper{
+
+  padding: 0px 10px 0px
+}
+
+
+  }
+  @media(max-width: 580px){
+    .listiconsize
+    {
+     font-size: 35px;
+  padding:0px 15px 10px 10px;
+  margin-left: 53px;
+  
+    }
+  .phone
+{
+  font-size:20px;
+  padding-top:10px;
+  padding-left:25px;
+  margin-left:120px;
+}
+
+.header
+{
+ position:fixed;
+}
+.background
+{
+  top:0;
+}
+.homepagetitle
+{
+  font-size: 38px;
+}
+.header .wrapper{
+
+  padding: 0px 10px 0px
+}
+ @media(max-width: 510px){
+    .listiconsize
+    {
+     font-size: 30px;
+  padding:0px 10px 10px 10px;
+  margin-left: 43px;
+  
+    }
+   .phone
+{
+  font-size:17px;
+  padding-top:10px;
+  padding-left:25px;
+  margin-left:88px;
+}
+
+  }
+  @media(max-width: 468px){
+    .listiconsize
+    {
+     font-size: 30px;
+  padding:0px 18px 10px 10px;
+  margin-left: 23px;
+  
+    }
+  .phone
+{
+  font-size:17px;
+  padding-top:10px;
+  padding-left:25px;
+  margin-left:68px;
+}
+
+
+.homepagetitle
+{
+  font-size: 33px;
+}
+.header
+{
+  position:fixed;
+}
+.background
+{
+  top:0;
+}
+
+.header .wrapper{
+
+  padding: 0px 10px 0px
+}
+
+  }
+   @media(max-width: 398px){
+    .listiconsize
+    {
+     font-size: 26px;
+  padding:0px 8px 10px 10px;
+  margin-left: 23px;
+  
+    }
+ .phone
+{
+  font-size:17px;
+  padding-top:10px;
+  padding-left:11px;
+  margin-left:65px;
+}
+
+  }
+  @media(max-width: 348px){
+    .listiconsize
+    {
+     font-size: 28px;
+  padding:0px 8px 10px 10px;
+  margin-left: 5px;
+  
+    }
+  .phone
+{
+  font-size:17px;
+  padding-top:10px;
+  padding-left:11px;
+  margin-left:30px;
+}
+.headercategory2 ul li 
+{
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 15px;
+  list-style: none;
+  color: white;
+  display: inline;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.headercategory2 ul li a:hover
+{
+
+    border-top: 0px solid #fff;        
+    color:#6095fa;
+    text-decoration: none;
+    padding-top: 12px;
+}
+
+
+.homepagetitle
+{
+  background-color: rgba(0, 0, 0, 0.5);
+display: inline-block;
+font-size: 38px;
+color: #FFF;
+text-align: center;
+margin-bottom: 40px;
+margin-top: 70px;
+padding: 10px;
+}
+.header
+{
+  position:fixed;
+  margin-bottom: 50px;
+}
+.background
+{
+  top:0;
+}
+.header .wrapper{
+
+  padding: 0px 10px 0px
+}
+ }
+@media(max-width: 320px){
+  
+}
+
+ @media(max-width: 300px){
+  .headercategory2 ul li 
+{
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 15px;
+  list-style: none;
+  color: white;
+  display: inline;
+  margin-left: 40px;
+  margin-right: 0px;
+}
+ }

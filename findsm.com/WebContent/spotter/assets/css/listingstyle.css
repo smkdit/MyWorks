@@ -1,0 +1,526 @@
+ .stickyfiltermenu {
+  display: none;
+  position: fixed;
+
+  width: 13.4%;
+  z-index: 1;
+
+ }
+ .footersocialiconsdiv
+  {
+    text-align: center;
+  }
+ #stickyfiltertextname
+ {
+  width:100%;background:#59B671;color:#fff;margin-top:-1600px;
+ }
+ #samplelistingblock,#samplelistingblock2,#samplelistingblock3,#samplelistingblock4,#samplelistingblock5
+ {
+  display: none;
+ }
+ .footeraboutuscolor,.footercontactcolor{
+  color:#fff;
+ }
+
+.sub-header
+{
+	margin-top: 90px;
+}
+.listingparagraph
+{
+	font-family:  Helvetica,Arial, sans-serif;
+	 overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    
+}
+.verticallinecode
+{
+	top:-10px;
+}
+.mobileviewimagehover :hover
+{
+	opacity:0.9;
+}
+.footerpropeltreetext
+{
+	color:#fff;
+}
+.listingmainsectiondiv
+{
+	padding-top: 25px;
+}
+  @media (max-width: 1199px){
+  
+     .footersocialiconsdiv
+  {
+   width: 1170px;
+  }
+  }
+@media(max-width:1061px){
+
+	.footersocialiconsdiv
+	{
+		margin-left: 120px;
+	}
+	.footer-bottom
+	{
+		margin-left: 1px
+	}
+
+     .footersocialiconsdiv
+  {
+   width: 0px;
+  }
+    #main-menu .navbar .navbar-nav > li > a
+{
+  padding: 0px 14px;
+}
+}
+@media(max-width:992px){
+
+	.footersocialiconsdiv
+	{
+		margin-left: 0px;
+	}
+	.footer-bottom
+	{
+		margin-left: 0px
+	}
+}
+
+@media(max-width: 991px){
+
+
+.listingheadertitle
+{
+	font-size: 16px;
+	font-weight: bold;
+	
+		margin-top: 60px;
+}
+.footersocialiconsdiv
+    {
+      width: 1000px;
+    }
+    #allcategorybutton
+  {
+    width: 50%;
+  }
+  #homepagesliderline
+  {
+    padding-right: 15px;
+  }
+  .listingmainsectiondiv
+{
+	margin-top:-120px;
+}
+	}
+ @media(max-width: 967px){
+ .footersocialiconsdiv
+  {
+    width: 900px;
+  }
+
+   }
+ @media(max-width: 837px){
+ .footersocialiconsdiv
+  {
+   width: 500px;
+  }
+  }
+@media(max-width: 768px){
+ .header{
+ 	top:0px;
+ }
+ .sub-header
+{
+	margin-top: 50px;
+}
+ #allcategorybutton
+  {
+    width: 50%;
+  }
+  .iconsearchheader
+  {
+    display: block;
+  }
+}
+@media(max-width: 767px){
+
+#mobileviewimage
+
+{
+	width: 40%;
+}
+#listingheadertitlediv
+{
+
+	
+	width: 60%;
+	float: right;
+	margin-top: -210px;
+
+
+}
+.listingheadertitle
+{
+	
+	
+		margin-top: 0px;
+}
+ .footersocialiconsdiv
+    {
+      width: 740px;
+    }
+    .listingmainsectiondiv
+{
+	top:25px;
+}
+	}
+
+@media(max-width: 724px){
+    .footersocialiconsdiv
+    {
+      width: 700px;
+    }
+  
+  }
+   @media(max-width: 678px){
+    .footersocialiconsdiv
+    {
+      width: 650px;
+    }
+  
+  }
+    @media(max-width: 638px){
+    .footersocialiconsdiv
+    {
+      width: 610px;
+    }
+  
+  }
+@media(max-width: 600px){
+
+#mobileviewimage
+
+{
+	width: 40%;
+}
+#listingheadertitlediv
+{
+	width: 60%;
+	float: right;
+	margin-top: -180px;
+
+}
+
+	}
+	   @media(max-width: 588px){
+    .footersocialiconsdiv
+    {
+      width: 560px;
+    }
+  
+  }
+  @media(max-width: 548px){
+    .footersocialiconsdiv
+    {
+      width: 530px;
+    }
+
+  }
+
+@media(max-width: 507px){
+
+#mobileviewimage
+
+{
+	width: 40%;
+}
+#listingheadertitlediv
+{
+	width: 60%;
+	float: right;
+	margin-top: -160px;
+
+}
+.listingheadertitle
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: -1px;
+}
+.listingparagraph
+{
+	margin-top: -10px;
+}
+#verticallinecode
+{
+	top:-15px;
+}
+	}
+	  @media(max-width: 501px){
+    .footersocialiconsdiv
+    {
+      width: 480px;
+    }
+  
+  }
+
+  @media(max-width: 468px){
+    .footersocialiconsdiv
+    {
+      width: 450px;
+    }
+   
+  }
+ 
+
+@media(max-width: 454px){
+
+#mobileviewimage
+
+{
+	width: 40%;
+}
+#listingheadertitlediv
+{
+	width: 60%;
+	float: right;
+	margin-top: -150px;
+
+
+}
+.listingheadertitle
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: -1px;
+}
+.listingparagraph
+{
+	margin-top: -10px;
+}
+#verticallinecode
+{
+	top:-15px;
+}
+	}
+	  @media(max-width: 438px){
+    .footersocialiconsdiv
+    {
+      width: 400px;
+    }
+  
+  }
+@media(max-width: 420px){
+
+#mobileviewimage
+
+{
+	width: 40%;
+}
+#listingheadertitlediv
+{
+	width: 60%;
+	float: right;
+	margin-top: -140px;
+
+}
+.listingheadertitle
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: -1px;
+}
+#verticallinecode
+{
+	top:-15px;
+}
+.listingparagraph
+{
+	margin-top: -10px;
+}
+	}
+	@media(max-width: 400px){
+    .footersocialiconsdiv
+    {
+      width: 340px;
+    }
+ 
+  }
+  @media(max-width: 385px){
+  	.material-icons.md-light
+    {
+     width: 10px;
+    }
+  }
+@media(max-width: 380px){
+
+#mobileviewimage
+
+{
+	width: 40%;
+	top:5px;
+	
+}
+#listingheadertitlediv
+{
+	width: 60%;
+	float: right;
+	margin-top: -130px;
+
+}
+.listingheadertitle
+{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: -1px;
+}
+#verticallinecode
+{
+	top:-15px;
+}
+.listingparagraph
+{
+	margin-top: -10px;
+}
+.listingparagraph
+{
+	margin-top: -10px;
+	width: 12em;
+	text-overflow:ellipsis;
+}
+
+
+	}
+	@media(max-width: 368px){
+    .footersocialiconsdiv
+    {
+      width: 320px;
+    }
+ 
+  }
+@media(max-width: 350px){
+
+#mobileviewimage
+
+{
+	width: 40%;
+	top:10px;
+}
+#listingheadertitlediv
+{
+	width: 60%;
+	float: right;
+	margin-top: -120px;
+
+}
+.listingheadertitle
+{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: -1px;
+}
+#verticallinecode
+{
+	top:-15px;
+}
+.listingparagraph
+{
+	margin-top: -10px;
+}
+.listingparagraph
+{
+	margin-top: -10px;
+	width: 12em;
+	text-overflow:ellipsis;
+}
+
+	}
+@media(max-width: 320px){
+
+#mobileviewimage
+
+{
+	width: 40%;
+	top:12px;
+}
+#listingheadertitlediv
+{
+	width: 60%;
+	float: right;
+	margin-top: -110px;
+
+}
+.listingheadertitle
+{
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 1px;
+}
+#verticallinecode
+{
+	top:-15px;
+}
+.listingparagraph
+{
+	margin-top: -10px;
+}
+.listingparagraph
+{
+	margin-top: -10px;
+	
+}
+.material-icons.md-light
+    {
+     width: 2px;
+    }
+   .footersocialiconsdiv
+    {
+      width: 300px;
+    }	}
+@media(max-width: 308px){
+
+#mobileviewimage
+
+{
+	width: 40%;
+	top:12px;
+}
+#listingheadertitlediv
+{
+	width: 60%;
+	float: right;
+	margin-top: -110px;
+
+}
+.listingheadertitle
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+#verticallinecode
+{
+	top:-15px;
+}
+.listingparagraph
+{
+	margin-top: -8px;
+}
+
+	}
+@media(max-width: 280px){
+	.listingheadertitle
+{
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.listingparagraph
+{
+	margin-top: -8px;
+}
+}

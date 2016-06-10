@@ -1,0 +1,2604 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="PropelApp">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="bower_components/weather-icons/css/weather-icons.min.css" media="all">
+    <link rel="stylesheet" href="bower_components/metrics-graphics/dist/metricsgraphics.css">
+    <link rel="stylesheet" href="bower_components/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css" media="all">
+	<link rel="stylesheet" href="bower_components/kendo-ui/styles/kendo.common-material.min.css"/>
+    <link rel="stylesheet" href="bower_components/kendo-ui/styles/kendo.material.min.css"/>
+    <link rel="stylesheet" href="altair/assets/icons/flags/flags.min.css" media="all">
+    <link rel="stylesheet" href="altair/assets/css/main.min.css" media="all">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="shop/assets/lib/jquery.bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="shop/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="shop/assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/dev.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/test.css">
+    <link rel="stylesheet" href="spotter/assets/css/ng-tags-input.min.css">
+    <link rel="stylesheet" type="text/css" href="spotter/assets/css/listingitem.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+	<script type="text/javascript" src="assets/js/ng-tags-input.min.js"></script>
+    <script src="app.js"></script>
+	<script src="assets/js/controllers/HomePageCtrl.js"></script>
+	<script src="assets/js/controllers/ListingCtrl.js"></script>
+	<script src="assets/js/controllers/ItemDetailCtrl.js"></script>
+	<script src="assets/js/controllers/AdminTableCtrl.js"></script>
+	<script src="assets/js/controllers/SubCategoryCtrl.js"></script>
+	<script src="assets/js/controllers/SubCategoryQueueCtrl.js"></script>
+	<script src="assets/js/controllers/ProductDataCtrl.js"></script>
+	<script src="assets/js/controllers/ProductQueueCtrl.js"></script>
+	<script src="assets/js/controllers/ServiceDataCtrl.js"></script>
+	<script src="assets/js/controllers/ServiceQueueCtrl.js"></script>
+	<script src="assets/js/controllers/CityDataCtrl.js"></script>
+	<script src="assets/js/controllers/CityQueueCtrl.js"></script>
+	<script src="assets/js/controllers/UserAccountCtrl.js"></script>
+	<script src="assets/js/controllers/AddBusinessCtrl.js"></script>
+	<script src="assets/js/controllers/BusinessCtrl.js"></script>
+	
+	<script type="text/javascript">
+var open = false;
+function verticalmenudiv(){
+  if(open == true)
+    open = false;
+  else
+    open = true;
+  if(open == true)
+  document.getElementById('verticalmenudiv').style.display="block";
+  else
+    document.getElementById('verticalmenudiv').style.display="none";
+}
+</script>
+     <script type="text/javascript">
+var leftMenu = function(){  
+  if(document.getElementById("left").className == "")
+    document.getElementById("left").className = "nav-expandedleft";
+  else
+    document.getElementById("left").className = "";
+};
+var leftClose = function(){
+    document.getElementById("left").className = "";
+};
+var rightMenu = function(){ 
+  if(document.getElementById("right").className == "")
+    document.getElementById("right").className = "nav-expanded";
+  else
+    document.getElementById("right").className = "";
+};
+var rightClose = function(){
+  document.getElementById("right").className = "";  
+}
+</script>
+   <link href="spotter/assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="spotter/assets/bootstrap/css/bootstrap.css" type="text/css">
+   <link rel="stylesheet" href="spotter/assets/css/bootstrap-select.min.css" type="text/css">
+   <link rel="stylesheet" href="spotter/assets/css/owl.carousel.css" type="text/css">
+   <link rel="stylesheet" href="spotter/assets/css/jquery.nouislider.min.css" type="text/css">
+   <link rel="stylesheet" href="spotter/assets/css/colors/brown.css" type="text/css" id="brown">
+   <link rel="stylesheet" href="spotter/assets/css/user.style.css" type="text/css">
+   <link rel="stylesheet" type="text/css" href="spotter/assets/css/sample.css">
+   <link rel="stylesheet" type="text/css" href="spotter/assets/css/right.css">
+   <link rel="stylesheet" type="text/css" href="spotter/assets/css/headerstyle.css">
+   <title>PropelTree</title>
+<script type="text/javascript">
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");
+	});
+	</script>
+</head>
+<div id="loader" class="se-pre-con"></div>
+<body class="sidebar_main_open sidebar_main_swipe header_full home map-fullscreen page-homepage navigation-off-canvas page-fade-in main-searcn_active" id="page-top">
+ <script type="text/javascript">
+  $(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 650) {
+    $('.navtopfixedmenu').fadeIn();
+  } else {
+    $('.navtopfixedmenu').fadeOut();
+  }
+});
+  </script>
+<div ng-controller="MainCtrl">
+<div ng-controller="HomePageCtrl">
+<!-- Outer Wrapper-->
+<div id="outer-wrapper">
+    <div class="hidden-lg hidden-md "id="categoryslider">
+    <div id="right">
+           <div class="navright hidden-lg hidden-md">
+                   <ul class="list-unstyled main-rightslidemenu">
+
+    <!--Include your navigation here-->
+    <li class="text-right"><a onclick="rightClose();" href="#" id="nav-close">X</a></li>
+    
+  </ul>
+
+                    <a type="button"class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff;margin-top:-10px;"data-toggle="collapse" data-target="#collapse11">Arts and Entertainment</a>
+                      <div id="collapse11" class="collapse ">
+                        <ul class="panel list-unstyled" style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Events </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Planners</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Music & Entertainment</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Astrology</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Event Organiser</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> Food</li>
+                           <li style="border-bottom:1px solid #f0f0f0;padding:5px">Decoration</li>   
+                        </ul>
+                      </div>
+                      <a type="button"class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff"data-toggle="collapse"data-target="#collapse12">Automotive</a>
+                      <div id="collapse12" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse13">Business and Professional Services</a>
+                      <div id="collapse13" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> Incrideable India </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">SRM Travels</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 20-30</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 30-40</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 40-50</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 50-60</li>        
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse14">Construction and Contrators</a>
+                      <div id="collapse14" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> Incrideable India </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">SRM Travels</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 20-30</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 30-40</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 40-50</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 50-60</li>        
+                        </ul>
+                      </div>
+                       <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse15">Clothing and Accessories</a>
+                      <div id="collapse15" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> Incrideable India </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">SRM Travels</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 20-30</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 30-40</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 40-50</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 50-60</li>        
+                        </ul>
+                      </div>
+                       <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse16">Computers and Electronics</a>
+                      <div id="collapse16" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> Incrideable India </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">SRM Travels</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 20-30</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 30-40</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 40-50</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px"> 50-60</li>        
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse17">Education</a>
+                      <div id="collapse17" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse18">Food and Dining</a>
+                      <div id="collapse18" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse19">Home and Garden</a>
+                        <div id="collapse19" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                        <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse20">Health and Medicine</a>
+                         <div id="collapse20" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse21">Industry and Agriculture</a>
+                       <div id="collapse21" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse22">Legal and Financial</a>
+                       <div id="collapse22" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse23">Media Communication</a>
+                       <div id="collapse23" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                       <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse24">Personal Care and Services</a>
+                        <div id="collapse24" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse25">Real Estate</a>
+                       <div id="collapse25" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse26">Shopping</a>
+                       <div id="collapse26" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse27">Sports and Creation</a>
+                       <div id="collapse27" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse28">Travel and Transporation</a>
+                       <div id="collapse28" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0;padding:5px">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse33">Testing1</a>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse33">Testing2</a>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse33">Testing2</a>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse33">Testing3</a>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse33">Testing4</a>
+          </div>
+        </div>
+          <div class="navbar-header pull-right hidden-md hidden-lg">
+          <a id="nav-expander" class="nav-expander fixed" onclick="rightMenu();"style="width:100%;text-align:center;top:-105px;background:#eee;color:#222;box-shadow:0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);font-weight:bold;">Category</a>
+          </div>
+    </div>
+   
+    <!-- Inner Wrapper -->
+   
+    <div id="inner-wrapper">
+        <!-- Navigation-->
+        <header id="header_main" style="box-shadow:none">
+        <div class="header_main_content">
+            <nav class="uk-navbar">
+               <div class="main_logo_top">
+                        <a ng-click="home()"><img src="altair/assets/img/logo320.png" alt="" height="15" width="71"/></a>
+                    </div>
+                <!-- main sidebar switch -->
+                <a href="#" id="sidebar_main_toggle" class="sSwitch sSwitch_left">
+                    <span class="sSwitchIcon"></span>
+                </a>
+                 <a><span class=" hidden-sm hidden-md hidden-lg"><i class="material-icons headerhomeicon">&#xE88A;</i></span></a>
+                <!-- secondary sidebar switch -->
+                <a href="#" id="sidebar_secondary_toggle" class="sSwitch sSwitch_right sidebar_secondary_check">
+                    <span class="sSwitchIcon"></span>
+                </a>
+                <div id="menu_top_dropdown" class="uk-float-left uk-hidden-small">
+                        <div class="uk-button-dropdown" data-uk-dropdown="{mode:'click'}">
+                            <a href="#" class="top_menu_toggle"><i class="material-icons md-24">&#xE8F0;</i></a>
+                            <div class="uk-dropdown uk-dropdown-width-3">
+                                <div class="uk-grid uk-dropdown-grid" data-uk-grid-margin>
+                                    <div class="uk-width-2-3">
+                                        <div class="uk-grid uk-grid-width-medium-1-3 uk-margin-top uk-margin-bottom uk-text-center" data-uk-grid-margin>
+                                            <a href="page_mailbox.html">
+                                                <i class="material-icons md-36">&#xE158;</i>
+                                                <span class="uk-text-muted uk-display-block">Mailbox</span>
+                                            </a>
+                                            <a href="page_invoices.html">
+                                                <i class="material-icons md-36">&#xE53E;</i>
+                                                <span class="uk-text-muted uk-display-block">Invoices</span>
+                                            </a>
+                                            <a href="page_chat.html">
+                                                <i class="material-icons md-36 md-color-red-600">&#xE0B9;</i>
+                                                <span class="uk-text-muted uk-display-block">Chat</span>
+                                            </a>
+                                            <a href="page_scrum_board.html">
+                                                <i class="material-icons md-36">&#xE85C;</i>
+                                                <span class="uk-text-muted uk-display-block">Scrum Board</span>
+                                            </a>
+                                            <a href="page_snippets.html">
+                                                <i class="material-icons md-36">&#xE86F;</i>
+                                                <span class="uk-text-muted uk-display-block">Snippets</span>
+                                            </a>
+                                            <a href="page_user_profile.html">
+                                                <i class="material-icons md-36">&#xE87C;</i>
+                                                <span class="uk-text-muted uk-display-block">User profile</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-3">
+                                        <ul class="uk-nav uk-nav-dropdown uk-panel">
+                                            <li class="uk-nav-header">Components</li>
+                                            <li><a href="components_accordion.html">Accordions</a></li>
+                                            <li><a href="components_buttons.html">Buttons</a></li>
+                                            <li><a href="components_notifications.html">Notifications</a></li>
+                                            <li><a href="components_sortable.html">Sortable</a></li>
+                                            <li><a href="components_tabs.html">Tabs</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="uk-navbar-flip">
+                    <ul class="uk-navbar-nav user_actions">
+                     <li data-uk-dropdown="{mode:'click'}">
+                            <a href="#" class="user_action_image "><i class="material-icons locationicondiv">&#xE0C8;</i></a>
+                           
+                           <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip  ">
+                               <input type="text" name="product" list="productName"placeholder="Location"/ style="border:1px solid #f0f0f0;background-color:#fff;color:#222">
+                                    <datalist id="productName">
+                                      <option  value="chennai">chennai</option>
+                                      <option value="Kanchipuram">Kanchipuram</option>
+                                      <option value="Trichy">Trichy</option>
+                                       <option value="karur">karur</option>
+                                       <option value="Salem">Salem</option>
+                                    </datalist>
+                            </div>
+                           
+                        </li>
+                        <li class="iconsearchheader"><a href="#" id="main_search_btn" class="user_action_icon"><i class="resiconsearch material-icons md-24 md-light ">&#xE8B6;</i></a></li>
+                        <li data-uk-dropdown="{mode:'click'}">
+                            <a href="#" class="user_action_icon"><i class="material-icons md-24 md-light">&#xE7F4;</i><span class="uk-badge">16</span></a>
+                            <div class="uk-dropdown uk-dropdown-xlarge uk-dropdown-flip">
+                                <div class="md-card-content">
+                                    <ul class="uk-tab uk-tab-grid" data-uk-tab="{connect:'#header_alerts',animation:'slide-horizontal'}">
+                                        <li class="uk-width-1-2 uk-active"><a href="#" class="js-uk-prevent uk-text-small">Messages (12)</a></li>
+                                        <li class="uk-width-1-2"><a href="#" class="js-uk-prevent uk-text-small">Alerts (4)</a></li>
+                                    </ul>
+                                    <ul id="header_alerts" class="uk-switcher uk-margin">
+                                        <li>
+                                            <ul class="md-list md-list-addon">
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <span class="md-user-letters md-bg-cyan">mi</span>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Dolor aliquam officia.</a></span>
+                                                        <span class="uk-text-small uk-text-muted">Facilis quidem sed et atque repellat labore consequatur voluptas ipsa rem.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_07_tn.png" alt=""/>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Quia ad et.</a></span>
+                                                        <span class="uk-text-small uk-text-muted">Quasi non excepturi nisi dicta totam aut repellat eos nisi qui.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <span class="md-user-letters md-bg-light-green">fu</span>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading"><a href="pages_mailbox.html">A quod.</a></span>
+                                                        <span class="uk-text-small uk-text-muted">In dolorum ea voluptatem at tenetur facilis.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Voluptatibus et.</a></span>
+                                                        <span class="uk-text-small uk-text-muted">Asperiores quas illo quia omnis fugiat facilis.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_09_tn.png" alt=""/>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading"><a href="pages_mailbox.html">Optio qui ut.</a></span>
+                                                        <span class="uk-text-small uk-text-muted">Ut explicabo sint minus dolore corporis qui rerum neque similique.</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="uk-text-center uk-margin-top uk-margin-small-bottom">
+                                                <a href="page_mailbox.html" class="md-btn md-btn-flat md-btn-flat-primary js-uk-prevent">Show All</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <ul class="md-list md-list-addon">
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons uk-text-warning">&#xE8B2;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Itaque non fugit.</span>
+                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Et quaerat adipisci fuga et quia.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons uk-text-success">&#xE88F;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Quisquam aperiam consequatur.</span>
+                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Doloremque ratione ut in asperiores cupiditate.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons uk-text-danger">&#xE001;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Tenetur veniam facilis.</span>
+                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Aut voluptates laboriosam quia aliquam dolorem sed similique sed.</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons uk-text-primary">&#xE8FD;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Et temporibus sapiente.</span>
+                                                        <span class="uk-text-small uk-text-muted uk-text-truncate">Id perspiciatis dolore quibusdam ut sed quia.</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                           <li data-uk-dropdown="{mode:'click'}">
+                            <a href="#" class="user_action_image"><img class="md-user-image" src="altair/assets/img/avatars/avatar_11_tn.png" alt=""/></a>
+                            <div class="uk-dropdown uk-dropdown-small uk-dropdown-flip "id="membertesting">
+                              <div class="col-md-12" style="height:290px;background:#fff;">
+                                  
+                                  <div class="row mainmemberdiv">
+
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                      <img class="md-user-image memberdivimageone"src="altair/assets/img/avatars/client.jpg" alt=""style="">
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8">
+                                      <h3 >Jule</h3>
+                                      <h5 class="mainmemberdivonesubtitle">Development</h5>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="row memberdivtwo">
+
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                      <img class="md-user-image memberdivimagetwo"src="altair/assets/img/avatars/member-3.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8 memberdivtwotitlediv">
+                                      
+                                      <h5 class="memberdivtwotitle"><a>Propeltree Technologies</a></h5>
+                                    </div>
+                                    
+                                  </div>
+                                    <div class="row memberdivtwo">
+
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                      <img class="md-user-image memberdivimagetwo"src="altair/assets/img/avatars/member-2.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-8 col-sm-8 col-xs-8 memberdivtwotitlediv">
+                                      
+                                      <h5 class="memberdivtwotitle"><a>Propeltree Business Solution</a></h5>
+                                    </div>
+                                    
+                                  </div>
+                                  <div class="row memberbuttonmaindiv">
+
+                                    <div class="col-md-6 col-sm-6 col-xs-6 memberbuttonmaindivone">
+                                      <input type="button" value="Add business"class="memberbuttonone"></input>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6 memberbuttonmaindivtwo">
+                                       <input type="button" value="Sign out"class="memberbuttontwo"></input>
+                                    </div>
+
+
+                                  </div>
+
+                              </div>
+
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header_main_search_form">
+            <form class="uk-form">
+            <i class="md-icon header_main_search_close material-icons headercloseicon">&#xE5CD;</i>
+                <input type="text" class="header_main_search_input" />
+                <button class="header_main_search_btn uk-button-link" ng-click="search()"><i class="md-icon material-icons"style="color:#fff">&#xE8B6;</i></button>
+            </form>
+        </div>
+<!--         <div class="header_main_search_form1" id="headerSearch"> -->
+            
+<!--             <form class="uk-form"> -->
+<!--                 <input type="text" class="header_main_search_input" style="background:#77C38B;" onfocus="angular.element(this).scope().searchFunc()"  ng-model="searchText " /> -->
+<!--                 <button class="header_main_search_btn uk-button-link"><i class="md-icon material-icons"style="color:#fff">&#xE8B6;</i></button> -->
+<!--             </form> -->
+<!--         </div> -->
+        <div class="header_main_search_form1" id="headerSearch">
+            <form class="uk-form">
+<!--             <input type="text" class="header_main_search_input1" style="background:#77C38B;"/> -->
+            <div class="search1">
+            	
+                <input type="text" class="header_main_search_input"  style="background:#77C38B;" ng-keyup="keyup(searchText)" ng-model="searchText" />
+                <div id="suggestions1">
+	    	        <ul class="results" >
+    					<li  ng-repeat="detail in allDetails | filter:searchText"><a ng-click="testing(detail)">{{detail}}</a></li>
+    		        </ul>
+    			</div>
+    		</div>
+                <button class="header_main_search_btn uk-button-link" ng-click="search()" style="height:39px;background:#77C38B;border-left:0.5px solid #fff;"><i class="md-icon material-icons"style="color:#fff">&#xE8B6;</i></button>
+            </form>
+        </div>
+    </header><!-- main header end -->
+  <!-- main sidebar -->
+    <aside id="sidebar_main">
+       
+         <div class="menu_section">
+            <ul style="padding-top:20px;">
+                <li class="current_section" title="Dashboard">
+                    <a ng-click="home()">
+                        <span class="menu_icon"><i class="material-icons">&#xE88A;</i></span>
+                        <span class="menu_title">Home</span>
+                    </a>
+                </li>
+                <li title="Mailbox">
+                    <a href="login.html">
+                        <span class="menu_icon"><i class="material-icons">&#xE851;</i></span>
+                        <span class="menu_title">Login / Sign up</span>
+                    </a>
+                </li>
+               
+            </ul>
+            <div class="col-md-12"style="top:5px;">
+              <a ><button type="button" class="btn btn-primary rightslidermenu">Sample</button></a>
+            </div>
+        </div>
+    </aside><!-- main sidebar end -->
+
+               <!-- secondary sidebar -->
+    <aside id="sidebar_secondary" class="tabbed_sidebar">
+        <ul class="uk-tab uk-tab-icons uk-tab-grid" data-uk-tab="{connect:'#dashboard_sidebar_tabs', animation:'slide-horizontal'}">
+            <li class="uk-active uk-width-1-3"><a href="#"><i class="material-icons">&#xE422;</i></a></li>
+            <li class="uk-width-1-3 chat_sidebar_tab"><a href="#"><i class="material-icons">&#xE0B7;</i></a></li>
+            <li class="uk-width-1-3"><a href="#"><i class="material-icons">&#xE8B9;</i></a></li>
+        </ul>
+
+        <div class="scrollbar-inner">
+            <ul id="dashboard_sidebar_tabs" class="uk-switcher">
+                <li>
+                    <div class="timeline timeline_small uk-margin-bottom">
+                        <div class="timeline_item">
+                            <div class="timeline_icon timeline_icon_success"><i class="material-icons">&#xE85D;</i></div>
+                            <div class="timeline_date">
+                                09<span>Nov</span>
+                            </div>
+                            <div class="timeline_content">Created ticket <a href="#"><strong>#3289</strong></a></div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="timeline_icon timeline_icon_danger"><i class="material-icons">&#xE5CD;</i></div>
+                            <div class="timeline_date">
+                                15<span>Nov</span>
+                            </div>
+                            <div class="timeline_content">Deleted post <a href="#"><strong>Ut fugiat molestiae quos itaque necessitatibus itaque.</strong></a></div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="timeline_icon"><i class="material-icons">&#xE410;</i></div>
+                            <div class="timeline_date">
+                                19<span>Nov</span>
+                            </div>
+                            <div class="timeline_content">
+                                Added photo
+                                <div class="timeline_content_addon">
+                                    <img src="altair/assets/img/gallery/Image16.jpg" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="timeline_icon timeline_icon_primary"><i class="material-icons">&#xE0B9;</i></div>
+                            <div class="timeline_date">
+                                21<span>Nov</span>
+                            </div>
+                            <div class="timeline_content">
+                                New comment on post <a href="#"><strong>Non molestiae possimus aut.</strong></a>
+                                <div class="timeline_content_addon">
+                                    <blockquote>
+                                        Rerum non vitae nisi nulla ipsam ea qui.&hellip;
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline_item">
+                            <div class="timeline_icon timeline_icon_warning"><i class="material-icons">&#xE7FE;</i></div>
+                            <div class="timeline_date">
+                                29<span>Nov</span>
+                            </div>
+                            <div class="timeline_content">
+                                Added to Friends
+                                <div class="timeline_content_addon">
+                                    <ul class="md-list md-list-addon">
+                                        <li>
+                                            <div class="md-list-addon-element">
+                                                <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                            </div>
+                                            <div class="md-list-content">
+                                                <span class="md-list-heading">Anabel Eichmann</span>
+                                                <span class="uk-text-small uk-text-muted">Accusamus eos exercitationem eum quisquam.</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <ul class="md-list md-list-addon chat_users">
+                        <li>
+                            <div class="md-list-addon-element">
+                                <span class="element-status element-status-success"></span>
+                                <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_02_tn.png" alt=""/>
+                            </div>
+                            <div class="md-list-content">
+                                <div class="md-list-action-placeholder"></div>
+                                <span class="md-list-heading">Lea Okuneva</span>
+                                <span class="uk-text-small uk-text-muted uk-text-truncate">Unde ut.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-list-addon-element">
+                                <span class="element-status element-status-success"></span>
+                                <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_09_tn.png" alt=""/>
+                            </div>
+                            <div class="md-list-content">
+                                <div class="md-list-action-placeholder"></div>
+                                <span class="md-list-heading">Wilhelmine Mraz</span>
+                                <span class="uk-text-small uk-text-muted uk-text-truncate">Nobis delectus odit.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-list-addon-element">
+                                <span class="element-status element-status-danger"></span>
+                                <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_04_tn.png" alt=""/>
+                            </div>
+                            <div class="md-list-content">
+                                <div class="md-list-action-placeholder"></div>
+                                <span class="md-list-heading">Kristin Gutmann</span>
+                                <span class="uk-text-small uk-text-muted uk-text-truncate">Fugit impedit.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-list-addon-element">
+                                <span class="element-status element-status-warning"></span>
+                                <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_07_tn.png" alt=""/>
+                            </div>
+                            <div class="md-list-content">
+                                <div class="md-list-action-placeholder"></div>
+                                <span class="md-list-heading">Rosella Bogan</span>
+                                <span class="uk-text-small uk-text-muted uk-text-truncate">Et dolorum.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="chat_box_wrapper chat_box_small" id="chat">
+                        <div class="chat_box chat_box_colors_a">
+                            <div class="chat_message_wrapper">
+                                <div class="chat_user_avatar">
+                                    <img class="md-user-image" src="altair/assets/img/avatars/avatar_11_tn.png" alt=""/>
+                                </div>
+                                <ul class="chat_message">
+                                    <li>
+                                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, eum? </p>
+                                    </li>
+                                    <li>
+                                        <p> Lorem ipsum dolor sit amet.<span class="chat_message_time">13:38</span> </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="chat_message_wrapper chat_message_right">
+                                <div class="chat_user_avatar">
+                                    <img class="md-user-image" src="altair/assets/img/avatars/avatar_03_tn.png" alt=""/>
+                                </div>
+                                <ul class="chat_message">
+                                    <li>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem delectus distinctio dolor earum est hic id impedit ipsum minima mollitia natus nulla perspiciatis quae quasi, quis recusandae, saepe, sunt totam.
+                                            <span class="chat_message_time">13:34</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="chat_message_wrapper">
+                                <div class="chat_user_avatar">
+                                    <img class="md-user-image" src="altair/assets/img/avatars/avatar_11_tn.png" alt=""/>
+                                </div>
+                                <ul class="chat_message">
+                                    <li>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ea mollitia pariatur porro quae sed sequi sint tenetur ut veritatis.
+                                            <span class="chat_message_time">23 Jun 1:10am</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="chat_message_wrapper chat_message_right">
+                                <div class="chat_user_avatar">
+                                    <img class="md-user-image" src="altair/assets/img/avatars/avatar_03_tn.png" alt=""/>
+                                </div>
+                                <ul class="chat_message">
+                                    <li>
+                                        <p> Lorem ipsum dolor sit amet, consectetur. </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            <span class="chat_message_time">Friday 13:34</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <h4 class="heading_c uk-margin-small-bottom uk-margin-top">General Settings</h4>
+                    <ul class="md-list">
+                        <li>
+                            <div class="md-list-content">
+                                <div class="uk-float-right">
+                                    <input type="checkbox" data-switchery data-switchery-size="small" checked id="settings_site_online" name="settings_site_online" />
+                                </div>
+                                <span class="md-list-heading">Site Online</span>
+                                <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet&hellip;</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-list-content">
+                                <div class="uk-float-right">
+                                    <input type="checkbox" data-switchery data-switchery-size="small" id="settings_seo" name="settings_seo" />
+                                </div>
+                                <span class="md-list-heading">Search Engine Friendly URLs</span>
+                                <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet&hellip;</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-list-content">
+                                <div class="uk-float-right">
+                                    <input type="checkbox" data-switchery data-switchery-size="small" id="settings_url_rewrite" name="settings_url_rewrite" />
+                                </div>
+                                <span class="md-list-heading">Use URL rewriting</span>
+                                <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet&hellip;</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <hr class="md-hr">
+                    <h4 class="heading_c uk-margin-small-bottom uk-margin-top">Other Settings</h4>
+                    <ul class="md-list">
+                        <li>
+                            <div class="md-list-content">
+                                <div class="uk-float-right">
+                                    <input type="checkbox" data-switchery data-switchery-size="small" data-switchery-color="#7cb342" checked id="settings_top_bar" name="settings_top_bar" />
+                                </div>
+                                <span class="md-list-heading">Top Bar Enabled</span>
+                                <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet&hellip;</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-list-content">
+                                <div class="uk-float-right">
+                                    <input type="checkbox" data-switchery data-switchery-size="small" data-switchery-color="#7cb342" id="settings_api" name="settings_api" />
+                                </div>
+                                <span class="md-list-heading">Api Enabled</span>
+                                <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet&hellip;</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="md-list-content">
+                                <div class="uk-float-right">
+                                    <input type="checkbox" data-switchery data-switchery-size="small" data-switchery-color="#d32f2f" id="settings_minify_static" checked name="settings_minify_static" />
+                                </div>
+                                <span class="md-list-heading">Minify JS files automatically</span>
+                                <span class="uk-text-muted uk-text-small">Lorem ipsum dolor sit amet&hellip;</span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <button type="button" class="chat_sidebar_close uk-close"></button>
+        <div class="chat_submit_box">
+            <div class="uk-input-group">
+                <input type="text" class="md-input" name="submit_message" id="submit_message" placeholder="Send message">
+                <span class="uk-input-group-addon">
+                    <a href="#"><i class="material-icons md-24">&#xE163;</i></a>
+                </span>
+            </div>
+        </div>
+
+    </aside><!-- secondary sidebar end -->
+
+ 
+        <!-- end Navigation-->
+    <addbuttonnav>
+      <div class="list-unstyled addbuttonmenu">
+
+        <!--Include your addbuttonnavigation here-->
+        <div class="text-right"><a href="#" id="addbuttonnav-close" style="color:#fff">X</a></div>
+
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12" style="height:170px;"></div>
+
+               <div class="col-md-12 col-sm-12 col-xs-12 addbuttoncategorydiv">
+                <div class="row">
+                  <div class="container"style="height:230px;">
+
+                    <div class="row">
+
+                        
+                      <div class="col-md-12 col-xs-12 col-sm-12">
+                         <h1 style="color:#fff;font-size:25px;padding-bottom:10px;padding-top:20px;"> For Users</h1>
+                        <div class="col-md-3 col-sm-3 col-xs-12 addbuttoncategoryone" >
+                          <h3 class="addbuttoncategorytwotitle">Post Requirement</h1>
+                           
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-12 addbuttoncategoryone">
+                          <h3 class="addbuttoncategoryonetitle">Get Quotation</h1>
+                          
+                        </div>
+                      </div>
+<!--                      <div class="col-md-12 col-sm-12 col-xs-12 "style="height:30px;"></div> -->
+
+                       <div class="col-md-12 col-xs-12 col-sm-12">
+                         <h1 style="color:#fff;font-size:25px;padding-bottom:10px;padding-top:20px;"> For Businesses</h1>
+
+                        <a href="#/addbusiness"><div class="col-md-3 col-sm-3 col-xs-12 addbuttoncategoryone">
+                          <h3 class="addbuttoncategorytwotitle">Add Businesses</h1>
+                        </div></a>
+
+                        <div class="col-md-3 col-sm-3 col-xs-12 addbuttoncategoryone">
+                          <h3 class="addbuttoncategoryonetitle">Add Product</h1>
+                          
+                        </div>
+
+                        <div class="col-md-3 col-sm-3 col-xs-12 addbuttoncategoryone">
+                          <h3 class="addbuttoncategorytwotitle">Add Services</h1>
+                           
+                        </div>
+
+                       
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+               </div>
+
+<!--                 <div class="col-md-12"style="height:100px;"></div> -->
+            </div>
+          </div>
+        </div>
+
+     </addbuttonnav>
+     <div class="addbuttonaddbuttonnav addbuttonaddbuttonnav-inverse addbuttonaddbuttonnav-fixed-top">      
+                      <div class="addbuttonaddbuttonnav-header pull-right">
+                        <a id="addbuttonnavigationexpand" class="addbuttonnavigationexpand fixed">
+                          <i class="fa fa-plus fa-lg white"></i> ADD 
+                        </a>
+                      </div>
+                    </div>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){                       
+
+       //addbuttonnavigation Menu Slider
+        $('#addbuttonnavigationexpand').on('click',function(e){
+          e.preventDefault();
+          $('body').toggleClass('addbuttonnav-expanded');
+        });
+        $('#addbuttonnav-close').on('click',function(e){
+          e.preventDefault();
+          $('body').removeClass('addbuttonnav-expanded');
+        });
+
+        // Initialize addbuttonnavgoco with default options
+//         $(".addbuttonmenu").addbuttonnavgoco({
+//             caret: '<span class="caret"></span>',
+//             accordion: false,
+//             openClass: 'open',
+//             save: true,
+//             cookie: {
+//                 name: 'addbuttonnavgoco',
+//                 expires: false,
+//                 path: '/'
+//             },
+//             slide: {
+//                 duration: 300,
+//                 easing: 'swing'
+//             }
+//         });
+
+      });
+    </script>
+      <div id="" class="navtopfixedmenu nav-top-menu hidden-xs ">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-md-3 col-sm-3 hidden-xs" id="box-vertical-megamenus">
+                    <div class="box-vertical-megamenus hidden-xs"style="background:none;margin:-10px;z-index:998">
+                    <h4 class="title"style="background:#D6D6D6;color:#222">
+                        <span class="title-menu">Categories</span>
+                        <span class="btn-open-mobile pull-right"onclick="verticalmenudiv();"><i class="fa fa-bars"></i></span>
+                    </h4>
+                    <div class=" vertical-menu-content is-home"id="verticalmenudiv">
+                         <ul class="vertical-menu-list ">
+                           <li>
+                              <a class="parent" ng-click="categorySearch('Arts and Entertainment')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/10.png">Arts and Entertainment</a>
+                              <div class="vertical-dropdown-menu " >
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Arts and Entertainment</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub1"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                              <li>
+                              <a class="parent" ng-click="categorySearch('Automotive')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/10.png">Automotive</a>
+                              <div class="vertical-dropdown-menu " >
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Automotive</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub2"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="parent" ng-click="categorySearch('Business and Professional Services')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/2.png">Business and Professional Services</a>
+                                <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Business and Professional Services</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub3"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                            <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                              <a class="parent" ng-click="categorySearch('Construction and Contractors')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/3.png">Construction and Contractors</a>
+                               <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Construction and Contractors</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub4"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                             <li>
+                              <a class="parent" ng-click="categorySearch('Clothing and Accessories')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/10.png">Clothing and Accessories</a>
+                              <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Clothing and Accessories</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub5"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                             <li>
+                              <a class="parent" ng-click="categorySearch('Education')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/6.png">Education</a>
+                              <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Education</span></h4>
+                                            <ul class="group-link-default">
+                                               <li ng-repeat="sub in sub6"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+                             <li>
+                              <a class="parent" ng-click="categorySearch('Food and Dining')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/9.png">Food and Dining</a>
+                              <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Food and Dining</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub7"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                              <a class="parent" ng-click="categorySearch('Home and Garden')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/4.png">Home and Garden</a>
+                              <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Home and Garden</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub8"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                              <a class="parent" ng-click="categorySearch('Health and Medicine')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/4.png">Health and Medicine</a>
+                              <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Health and Medicine</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub9"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+                            
+                                
+                            <li>
+                              <a class="parent" ng-click="categorySearch('Industry and Agriculture')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/8.png">Industry and Agriculture</a>
+                               <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Industry and Agriculture</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub10"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+                           
+                           
+                            
+                            
+                        </ul>
+                        <div class="all-category"><span class="">All Categories</span></div>
+                    </div>
+                </div>
+                </div>
+                <div id="main-menu" class="col-md-9 col-sm-9 hidden-xs main-menu">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header"style="background:#59B671  ">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <a class="navbar-brand" href="#">MENU</a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                 <ul class="nav navbar-nav">
+                                    <li class=" dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</a>
+                                        <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Home Style 1</a></li>
+                                                    <li class="link_container"><a href="index2.html">Home Style 2</a></li>
+                                                    <li class="link_container"><a href="index3.html">Home Style 3</a></li>
+                                                    <li class="link_container"><a href="index4.html">Home Style 4</a></li>
+                                                    <li class="link_container"><a href="index5.html">Home Style 5</a></li>
+                                                    <li class="link_container"><a href="index6.html">Home Style 6</a></li>
+                                                    <li class="link_container"><a href="index7.html">Home Style 7</a></li>
+                                                    <li class="link_container"><a href="index8.html">Home Style 8</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Fashion</a>
+                                        <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index2.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index3.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index4.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index5.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index6.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index7.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index8.html">Fashion</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                      <a href="category.html"class="dropdown-toggle"data-toggle="dropdown">Sports</a>
+                                      <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Sports</a></li>
+                                                    <li class="link_container"><a href="index2.html">Sports</a></li>
+                                                    <li class="link_container"><a href="index3.html">Sports</a></li>
+                                                    <li class="link_container"><a href="index4.html">Sports</a></li>
+                                                    <li class="link_container"><a href="index5.html">Sports</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Foods</a>
+                                          <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Foods</a></li>
+                                                    <li class="link_container"><a href="index2.html">Foods</a></li>
+                                                    <li class="link_container"><a href="index3.html">Foods</a></li>
+                                                    <li class="link_container"><a href="index4.html">Foods</a></li>
+                                                    <li class="link_container"><a href="index5.html">Foods</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Digital</a>
+                                        <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="#">Mobile</a></li>
+                                                    <li class="link_container"><a href="#">Tablets</a></li>
+                                                    <li class="link_container"><a href="#">Laptop</a></li>
+                                                    <li class="link_container"><a href="#">Memory Cards</a></li>
+                                                    <li class="link_container"><a href="#">Accessories</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul> 
+                                    </li>
+                                   <li class="dropdown">
+                                      <a href="category.html"class="dropdown-toggle"data-toggle="dropdown">Jewelry</a>
+                                      <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Jewelry</a></li>
+                                                    <li class="link_container"><a href="index2.html">Jewelry</a></li>
+                                                    <li class="link_container"><a href="index3.html">Jewelry</a></li>
+                                                    <li class="link_container"><a href="index4.html">Jewelry</a></li>
+                                                    <li class="link_container"><a href="index5.html">Jewelry</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                    <li class="dropdown">
+                                      <a href="category.html"class="dropdown-toggle"data-toggle="dropdown">Events</a>
+                                      <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Event</a></li>
+                                                    <li class="link_container"><a href="index2.html">Event</a></li>
+                                                    <li class="link_container"><a href="index3.html">Event</a></li>
+                                                    <li class="link_container"><a href="index4.html">Event</a></li>
+                                                    <li class="link_container"><a href="index5.html">Event</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
+                                            <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Shop</a></li>
+                                                    <li class="link_container"><a href="index2.html">Shop</a></li>
+                                                    <li class="link_container"><a href="index3.html">Shop</a></li>
+                                                    <li class="link_container"><a href="index4.html">Shop</a></li>
+                                                    <li class="link_container"><a href="index5.html">Shop</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                </ul>
+                            </div><!--/.nav-collapse -->
+
+                        </div>
+
+                    </nav>
+
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Page Canvas-->
+        <div id="page-canvas">
+            <!--Off Canvas Navigation-->
+            <nav class="off-canvas-navigation">
+                <header>Navigation</header>
+                <div class="main-navigation navigation-off-canvas"></div>
+            </nav>
+            <!--end Off Canvas Navigation-->
+            <!--Page Content-->
+            <div id="page-content">
+                <!--Hero Image-->
+                <section class="hero-image search-filter-middle height-500">
+                    <div class="inner">
+                        <div class="container" style="margin-bottom:90px;padding-top:20px;">
+                            <div class="homepagetitle">Explore India's Small Businesses</div>
+                              
+                              <div class="container">
+                                <div class="row"> 
+                                 <div class=" col-md-2 col-sm-12 col-xs-12 loactionsearchdiv">
+                                    <input type="text" id="searchLocation" name="product" list="productName"placeholder="Location" style="border:1px solid black;background-color:#f0f0f0;color:#222">
+                                    <datalist id="productName">
+                                      <option  value="chennai">chennai</option>
+                                      <option value="Kanchipuram">Kanchipuram</option>
+                                      <option value="Trichy">Trichy</option>
+                                    </datalist>
+                                </div>
+                                 <div class="col-md-8 col-sm-12 col-xs-12 locationcategorydiv">
+          							<div class="search1">
+                                  		<input type="text"  id="searchBox" ng-keyup="keyup(searchText)"  onfocusout="angular.element(this).scope().searchFuncOut()" ng-model="searchText" class="form-control result"style="border:1px solid #222;" name="x" placeholder="Search term...">
+                                  		<ul class="results" style="margin-left:15px;width:95.5%;">
+	            	              			<div id="suggestions">
+    											<li ng-repeat="detail in allDetails | filter:searchText"><a ng-click="testing(detail)">{{detail}}</a></li>
+    										</div>
+	     		 				  		</ul>
+                              		</div>
+                              	</div>   
+    	                    	<div class="col-md-2 col-sm-12  col-xs-12 productsearchbuttondiv">
+	                                <button class="btn btn-primary productsearchbutton" ng-click="search()" type="button">Search</button>
+                              	</div>
+	                      </div>
+    	                </div>
+
+                                <div class="col-md-12">
+                                    <h3 style="color:white;padding-top:50px;font-size:25px;font-weight:normal;">Popular Searches:</h3>
+                                    <div class="headercategory">   
+                                        <ul>
+                                            <li><a href="#"style="color:white;">Business Services</a></li>
+                                            <li><a href="#"style="color:white;">Consumer Services</a></li>
+                                            <li><a href="#"style="color:white;">Health and fiftness</a></li>
+                                            <li><a href="#"style="color:white;">Food and Beverage</a></li>
+                                            <li><a href="#"style="color:white;">Education</a></li>
+                                            <li><a href="#"style="color:white;">Wedding Services</a></li><br>
+                                            <li><a href="#"style="color:white;">Technology and Communication</a></li>
+                                            <li><a href="#"style="color:white;">Industrial</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                            <!-- /.search-bar -->
+                        </div>
+                        <div class="headercategory2">
+                            <ul>
+                                <li><a href="#"style="color:white;">Popular Listings</a></li>
+                                <li><a href="#"style="color:white;">Latest Listings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="background"style="top:0px;">
+                        <img src="spotter/assets/img/1900.jpg" alt="">
+                    </div>
+                </section>
+                <div class="clearfix"></div>
+   <div id="" class="nav-top-menu"style="margin-top:10px;">
+        <div class="container">
+            <div class="row">
+              <!--mobile view category-->
+                <div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+                  <a type="button" class="btn btn-success categorysection" data-toggle="collapse" data-target="#categorysection"style="width:100%;background:#59B66F;color:#fff;font-size:20px">Category <i class="fa fa-th-list"></i></a>
+                    <div id="categorysection" class="collapse">
+                      <a type="button"class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff;"data-toggle="collapse" data-target="#collapse1">Wedding</a>
+                      <div id="collapse1" class="collapse ">
+                        <ul class="panel list-unstyled" style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0">Wedding Events </li>
+                          <li style="border-bottom:1px solid #f0f0f0">Wedding Planners</li>
+                          <li style="border-bottom:1px solid #f0f0f0">Music and Entertainment</li>
+                          <li style="border-bottom:1px solid #f0f0f0">Astrology</li>
+                          <li style="border-bottom:1px solid #f0f0f0">Event Organiser</li>
+                          <li style="border-bottom:1px solid #f0f0f0"> Food</li>
+                           <li style="border-bottom:1px solid #f0f0f0">Decoration</li>   
+                        </ul>
+                      </div>
+                      <a type="button"class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff"data-toggle="collapse"data-target="#collapse2">Photography</a>
+                      <div id="collapse2" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0">Click Photography</li>
+                          <li style="border-bottom:1px solid #f0f0f0">Wedding Photography </li>
+                          <li style="border-bottom:1px solid #f0f0f0">Testing1</li>
+                          <li style="border-bottom:1px solid #f0f0f0">Testing2</li>     
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"style="width:100%;background-color:#D6D6D6;color:#222;border-bottom:1px solid #fff" data-toggle="collapse" data-target="#collapse3">Tours</a>
+                      <div id="collapse3" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <li style="border-bottom:1px solid #f0f0f0"> Incrideable India </li>
+                          <li style="border-bottom:1px solid #f0f0f0">SRM Travels</li>
+                          <li style="border-bottom:1px solid #f0f0f0"> 20-30</li>
+                          <li style="border-bottom:1px solid #f0f0f0"> 30-40</li>
+                          <li style="border-bottom:1px solid #f0f0f0"> 40-50</li>
+                          <li style="border-bottom:1px solid #f0f0f0"> 50-60</li>        
+                        </ul>
+                      </div>
+                    </div>
+                  </div> 
+                  <!--mobile view category-->
+                <div class="col-md-3 hidden-xs hidden-sm" id="box-vertical-megamenus">
+                    <div class="box-vertical-megamenus hidden-xs"style="background:#FAFAFA;margin-right:-12px;z-index:998">
+                    <h4 class="title"style="background:#eee;color:#222;margin-top:-1px">
+                        <span class="title-menu">Categories</span>
+                        <span class="btn-open-mobile pull-right"><i class="fa fa-bars"></i></span>
+                    </h4>
+                    <div class="vertical-menu-content is-home"style="margin-top:-18.5px;">
+                        <ul class="vertical-menu-list ">
+                           <li>
+                              <a class="parent" ng-click="categorySearch('Arts and Entertainment')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/10.png">Arts and Entertainment</a>
+                              <div class="vertical-dropdown-menu " >
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Arts and Entertainment</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub1"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                              <li>
+                              <a class="parent" ng-click="categorySearch('Automotive')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/10.png">Automotive</a>
+                              <div class="vertical-dropdown-menu " >
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Automotive</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub2"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="parent" ng-click="categorySearch('Business and Professional Services')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/2.png">Business and Professional Services</a>
+                                <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Business and Professional Services</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub3"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                            <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                              <a class="parent" ng-click="categorySearch('Construction and Contractors')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/3.png">Construction and Contractors</a>
+                               <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Construction and Contractors</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub4"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                             <li>
+                              <a class="parent" ng-click="categorySearch('Clothing and Accessories')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/10.png">Clothing and Accessories</a>
+                              <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Clothing and Accessories</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub5"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                             <li>
+                              <a class="parent" ng-click="categorySearch('Education')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/6.png">Education</a>
+                              <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Education</span></h4>
+                                            <ul class="group-link-default">
+                                               <li ng-repeat="sub in sub6"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+                             <li>
+                              <a class="parent" ng-click="categorySearch('Food and Dining')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/9.png">Food and Dining</a>
+                              <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Food and Dining</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub7"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                              <a class="parent" ng-click="categorySearch('Home and Garden')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/4.png">Home and Garden</a>
+                              <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Home and Garden</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub8"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li>
+                              <a class="parent" ng-click="categorySearch('Health and Medicine')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/4.png">Health and Medicine</a>
+                              <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Health and Medicine</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub9"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+                            
+                                
+                            <li>
+                              <a class="parent" ng-click="categorySearch('Industry and Agriculture')"><img class="icon-menu" alt="Funky roots" src="shop/assets/data/8.png">Industry and Agriculture</a>
+                               <div class="vertical-dropdown-menu">
+                                    <div class="vertical-groups ">
+                                        <div class="mega-group ">
+                                            <h4 class="mega-group-header"><span>Industry and Agriculture</span></h4>
+                                            <ul class="group-link-default">
+                                                <li ng-repeat="sub in sub10"><a ng-click="categorySearch(sub.sub_category)">{{sub.sub_category}}</a></li>
+                                            </ul>
+                                             <a class="parent" href="categorylist.html"><b>View More</b></a>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+
+                            </li>
+                           
+                           
+                            
+                            
+                        </ul>
+                        <a href="categorylist.html"><div class="all-category"><span>All Categories</span></div></a>
+                    </div>
+                </div>
+                </div>
+                <div id="main-menu" class="col-md-9 hidden-xs hidden-sm main-menu">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header"style="background:#59B671  ">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <a class="navbar-brand" href="#">MENU</a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                 <ul class="nav navbar-nav">
+                                    <li class=" dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home</a>
+                                        <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Home Style 1</a></li>
+                                                    <li class="link_container"><a href="index2.html">Home Style 2</a></li>
+                                                    <li class="link_container"><a href="index3.html">Home Style 3</a></li>
+                                                    <li class="link_container"><a href="index4.html">Home Style 4</a></li>
+                                                    <li class="link_container"><a href="index5.html">Home Style 5</a></li>
+                                                    <li class="link_container"><a href="index6.html">Home Style 6</a></li>
+                                                    <li class="link_container"><a href="index7.html">Home Style 7</a></li>
+                                                    <li class="link_container"><a href="index8.html">Home Style 8</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Fashion</a>
+                                        <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index2.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index3.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index4.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index5.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index6.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index7.html">Fashion</a></li>
+                                                    <li class="link_container"><a href="index8.html">Fashion</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                      <a href="category.html"class="dropdown-toggle"data-toggle="dropdown">Sports</a>
+                                      <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Sports</a></li>
+                                                    <li class="link_container"><a href="index2.html">Sports</a></li>
+                                                    <li class="link_container"><a href="index3.html">Sports</a></li>
+                                                    <li class="link_container"><a href="index4.html">Sports</a></li>
+                                                    <li class="link_container"><a href="index5.html">Sports</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Foods</a>
+                                          <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Foods</a></li>
+                                                    <li class="link_container"><a href="index2.html">Foods</a></li>
+                                                    <li class="link_container"><a href="index3.html">Foods</a></li>
+                                                    <li class="link_container"><a href="index4.html">Foods</a></li>
+                                                    <li class="link_container"><a href="index5.html">Foods</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Digital</a>
+                                        <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="#">Mobile</a></li>
+                                                    <li class="link_container"><a href="#">Tablets</a></li>
+                                                    <li class="link_container"><a href="#">Laptop</a></li>
+                                                    <li class="link_container"><a href="#">Memory Cards</a></li>
+                                                    <li class="link_container"><a href="#">Accessories</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul> 
+                                    </li>
+                                   <li class="dropdown">
+                                      <a href="category.html"class="dropdown-toggle"data-toggle="dropdown">Jewelry</a>
+                                      <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Jewelry</a></li>
+                                                    <li class="link_container"><a href="index2.html">Jewelry</a></li>
+                                                    <li class="link_container"><a href="index3.html">Jewelry</a></li>
+                                                    <li class="link_container"><a href="index4.html">Jewelry</a></li>
+                                                    <li class="link_container"><a href="index5.html">Jewelry</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                    <li class="dropdown">
+                                      <a href="category.html"class="dropdown-toggle"data-toggle="dropdown">Events</a>
+                                      <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Event</a></li>
+                                                    <li class="link_container"><a href="index2.html">Event</a></li>
+                                                    <li class="link_container"><a href="index3.html">Event</a></li>
+                                                    <li class="link_container"><a href="index4.html">Event</a></li>
+                                                    <li class="link_container"><a href="index5.html">Event</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="category.html" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
+                                            <ul class="dropdown-menu container-fluid">
+                                            <li class="block-container">
+                                                <ul class="block">
+                                                    <li class="link_container"style="margin-top:-30px;"><a href="detail.html">Shop</a></li>
+                                                    <li class="link_container"><a href="index2.html">Shop</a></li>
+                                                    <li class="link_container"><a href="index3.html">Shop</a></li>
+                                                    <li class="link_container"><a href="index4.html">Shop</a></li>
+                                                    <li class="link_container"><a href="index5.html">Shop</a></li>
+                                                   
+                                                </ul>
+                                            </li>
+                                        </ul>  
+                                    </li>
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </nav>
+
+                </div>
+                       
+            </div>
+           
+        </div>
+    </div>
+    <div id="home-slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 slider-left"></div>
+            <div class="col-md-9 col-sm-12 header-top-right">
+              <div class="homeslider">
+                <div class="content-slide">
+                  <ul id="contenhomeslider">
+                    <li><img alt="Funky roots" src="shop/assets/data/slide.jpg" title="Funky roots" /></li>
+                    <li><img alt="Funky roots" src="shop/assets/data/testing.jpg" title="Funky roots" /></li>
+                    <li><img  alt="Funky roots" src="shop/assets/data/slide.jpg" title="Funky roots" /></li>
+                   </ul>
+                </div>
+              </div>
+              <div class="header-banner banner-opacity">
+                <a href="#"><img alt="Funky roots" src="shop/assets/data/testing(1).jpg" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <section id="listing" class="block"style="background:#F9F9F9">
+                    <div class="container trendingcategorydiv">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12 ">
+                                <section class="equal-height">
+                                    <header><h2 style="font-size:25px;text-align:center;margin-top:50px;margin-bottom:50px; ">Trending Categories</h2></header>
+
+                                    <div class="col-md-12 clothingmaindiv1">
+                                    <div class="row">
+
+                                         <div class="col-md-3 col-sm-3 col-xs-6 ">
+                                             
+                                              <div class="row ">
+                                             
+                                                <div class="col-md-12 col-sm-12 col-xs-12"id="categoryeffects">
+                                                   
+                                                  <img  src="spotter/assets/img/items/restaurant/clothing_final.jpg" >
+                                                
+                                                </div>
+
+                                              </div>
+
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 clothingdiv">
+                                                  <p class="clothingtext"> Clothing and Accessories </p>
+                                                </div>
+                                              </div>
+                                            
+                                          </div>
+
+                                        <!--/.col-sm-4-->
+                                        <div class="col-md-3 col-sm-3 col-xs-6 ">
+                                             
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 "id="categoryeffects">
+                                                  <img src="spotter/assets/img/items/restaurant/art&enter.jpg">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 clothingdiv">
+                                                  <p  class="artstext">Arts and Entertainment</p>
+                                                </div>
+                                              </div>
+                                           
+                                            </div>
+                                        <!--/.col-sm-4-->
+                                             <div class="col-md-3 col-sm-3 col-xs-6 trendingcategoryseven">
+                                             
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 "id="categoryeffects">
+                                                  <img src="spotter/assets/img/items/restaurant/professionalserv.jpg">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 clothingdiv">
+                                                  <p  class="professionaltext">Professional Services</p >
+                                                </div>
+                                              </div>
+                                           
+                                            </div>
+                                        <!--/.col-sm-4-->
+                                        <div class="col-md-3 col-sm-3 col-xs-6 trendingcategoryseven">
+                                             
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 "id="categoryeffects">
+                                                  <img src="spotter/assets/img/items/restaurant/food-&-dining.jpg">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 clothingdiv">
+                                                  <p class="foodtext">Food and Dining </p>
+                                                </div>
+                                              </div>
+                                           
+                                            </div>
+                                       
+                                       
+                                    </div>
+                                    <!--/.row-->
+                                    </div>
+                                   <div class="col-md-12 clothingmaindiv2">
+                                    <div class="row">
+
+                                       <div class="col-md-3 col-sm-3 col-xs-6 ">
+                                             
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 "id="categoryeffects">
+                                                  <img src="spotter/assets/img/items/restaurant/businessserv.jpg">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 clothingdiv">
+                                                  <p class="businessestext">Businesses Services </span>
+                                                </div>
+                                              </div>
+                                           
+                                            </div>
+                                        <!--/.col-sm-4-->
+                                        <div class="col-md-3 col-sm-3 col-xs-6 ">
+                                             
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 "id="categoryeffects">
+                                                  <img src="spotter/assets/img/items/restaurant/leg-&-Fin.jpg">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 clothingdiv">
+                                                  <p class="legaltext">Legal and Financial </span>
+                                                </div>
+                                              </div>
+                                           
+                                            </div>
+                                        <!--/.col-sm-4-->
+                                          <div class="col-md-3 col-sm-3 col-xs-6 trendingcategoryseven">
+                                             
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 "id="categoryeffects">
+                                                  <img src="spotter/assets/img/items/restaurant/personal.jpg">
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 clothingdiv">
+                                                  <p class="personaltext">Personal Care and Services </p>
+                                                </div>
+                                              </div>
+                                           
+                                          </div>
+                                        <!--/.col-sm-4-->
+                                        <div class="col-md-3 col-sm-3 col-xs-6 trendingcategoryseven">
+                                             
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 "id="categoryeffects">
+                                                  <img src="spotter/assets/img/items/restaurant/petserv.jpg">
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 clothingdiv">
+                                                  <p class="pettext"> Pet Services </p>
+                                                </div>
+                                              </div>
+                                           
+                                            </div>
+                                       
+                                       
+                                    </div>
+                                     <div class="col-md-12 col-sm-12 col-xs-12 ">
+                                        <figure class="allcategorybuttondiv"><a href="categorylist.html"><button type="button" class="btn allcategorybutton">All Category</button></a></figure>
+                                     </div>
+                                    <!--/.row-->
+                                    </div>
+
+                                </section>
+                                <!--/.equal-height-->
+
+                                
+
+                            </div>
+                           
+                            <!--/.col-md-3-->
+                        </div>
+                        <!--/.row-->
+                    </div>
+                    <!--/.block-->
+                </section>
+               
+                <section id="listing" class="block"style="background:#FFF">
+                    <div class="container trendingbusinessesdiv">
+                       <header><h2 style="font-size:25px;text-align:center;margin-top:40px;margin-bottom:50px;">Trending Businesses</h2></header>
+                        <div class="row">
+                             <div class="col-xs-12 col-sm-12 page-top-left">
+                <div class="popular-tabs">
+                      <ul class="nav-tab">
+                        <li class="active"><a data-toggle="tab" href="#tab-1">Popular Listings</a></li>
+                        <li><a data-toggle="tab" href="#tab-2">Latest Listings</a></li>
+                        
+                      </ul>
+                      <div class="tab-container">
+                            <div id="tab-1" class="tab-panel active">
+                                <ul class="product-list owl-carousel" data-dots="false" data-loop="true" data-nav = "true" data-margin = "30" data-autoplayTimeout="1000" data-autoplayHoverPause = "true" data-responsive='{"0":{"items":2},"600":{"items":4},"1000":{"items":4}}'>
+                                    <li>
+                                        <div class="left-block">
+                                            <a href="detail.html">
+                                                <img class="img-responsive" alt="product" src="shop/assets/data/p050.jpg" />
+                                            </a>
+                                            <div class="quick-view">
+                                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                                   
+                                            </div>
+                                           
+                                            <div class="group-price">
+                                                <span class="product-new">NEW</span>
+                                                <span class="product-sale">Sale</span>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h3 style="text-align:center"><a href="detail.html">Wedding</a></h3>
+                                            
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="left-block">
+                                            <a href="detail.html"><img class="img-responsive" alt="product" src="shop/assets/data/p054.jpg" /></a>
+                                            <div class="quick-view">
+                                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                                    
+                                            </div>
+                                            
+                                        </div>
+                                         <div class="right-block">
+                                            <h3 style="text-align:center"><a href="detail.html">Events</a></h3>
+                                            
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="left-block">
+                                            <a href="detail.html"><img class="img-responsive" alt="product" src="shop/assets/data/p052.jpg" /></a>
+                                            <div class="quick-view">
+                                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="group-price">
+                                                <span class="product-new">NEW</span>
+                                        </div>
+                                         <div class="right-block">
+                                            <h3 style="text-align:center"><a href="detail.html">Photography</a></h3>
+                                            
+                                            
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="left-block">
+                                            <a href="detail.html"><img class="img-responsive" alt="product" src="shop/assets/data/p053.jpg" /></a>
+                                            <div class="quick-view">
+                                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                                    
+                                            </div>
+                                            
+                                        </div>
+                                         <div class="right-block">
+                                            <h3 style="text-align:center"><a href="detail.html">Foods</a></h3>
+                                            
+                                            
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="tab-2" class="tab-panel">
+                                <ul class="product-list owl-carousel"  data-dots="false" data-loop="true" data-nav = "true" data-margin = "30"  data-autoplayTimeout="1000" data-autoplayHoverPause = "true" data-responsive='{"0":{"items":2},"600":{"items":4},"1000":{"items":4}}'>
+                                    <li>
+                                        <div class="left-block">
+                                            <a href="detail.html">
+                                            <img class="img-responsive" alt="product" src="shop/assets/data/p48.jpg" /></a>
+                                            <div class="quick-view">
+                                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                                   
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 class="product-name"><a href="detail.html">Maecenas consequat mauris</a></h5>
+                                            <div class="content_price">
+                                                <span class="price product-price">$38,95</span>
+                                                <span class="price old-price">$52,00</span>
+                                            </div>
+                                            <div class="product-star">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="left-block">
+                                            <a href="detail.html">
+                                            <img class="img-responsive" alt="product" src="shop/assets/data/p49.jpg" /></a>
+                                            <div class="quick-view">
+                                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                                    
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 class="product-name"><a href="detail.html">Maecenas consequat mauris</a></h5>
+                                            <div class="content_price">
+                                                <span class="price product-price">$38,95</span>
+                                                <span class="price old-price">$52,00</span>
+                                            </div>
+                                            <div class="product-star">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="left-block">
+                                            <a href="detail.html"><img class="img-responsive" alt="product" src="shop/assets/data/p50.jpg" /></a>
+                                            <div class="quick-view">
+                                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                                    
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 class="product-name"><a href="detail.html">Maecenas consequat mauris</a></h5>
+                                            <div class="content_price">
+                                                <span class="price product-price">$38,95</span>
+                                                <span class="price old-price">$52,00</span>
+                                            </div>
+                                            <div class="product-star">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="left-block">
+                                            <a href="detail.html"><img class="img-responsive" alt="product" src="shop/assets/data/p51.jpg" /></a>
+                                            <div class="quick-view">
+                                                    <a title="Add to my wishlist" class="heart" href="#"></a>
+                                                    
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 class="product-name"><a href="detail.html">Maecenas consequat mauris</a></h5>
+                                            <div class="content_price">
+                                                <span class="price product-price">$38,95</span>
+                                                <span class="price old-price">$52,00</span>
+                                            </div>
+                                            <div class="product-star">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half-o"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                      </div>
+                </div>
+            </div>
+                            <!--/.col-md-3-->
+                        </div>
+                        <!--/.row-->
+                    </div>
+                    <!--/.block-->
+                </section>
+
+
+                  <section class=" height-500">
+
+                    <div class="container-fluid ">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <section class="equal-height">
+                                   
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                          
+                                          <div class="row">
+
+                                            <div class="col-md-1 col-sm-1 hidden-xs"></div>
+
+                                              <div class="col-md-4 col-sm-12 col-xs-12 bannerdivone">
+                                                <div class="row">
+                                                  <div class="col-md-12 col-xs-12 col-sm-12">
+                                                    <div class="row">
+                                                      <div class="col-md-2 col-sm-2 col-xs-3">
+                                                        <img src="spotter/assets/img/default-avatar.png" alt=""class="bannerimageicondiv ">
+                                                      </div>
+                                                      <div class="col-md-10 col-sm-10 col-xs-9">
+                                                        <div class="row">
+                                                          <h1 class="bannerheadertitle ">Product Heading</h1>
+                                                      
+                                                          
+                                                            <p class="bannerheadersubtitle">
+                                                            All images and videos on Pixabay are released free of copyrights under 
+                                                            Creative Commons CC0.and use them royalty-free for anything you  
+                                                            Whatever you are </p>   
+                                                         <div class="row">
+                                                          <div class="col-md-12 col-sm-12 col-xs-12" >
+                                                          <a ><button type="button" class="btn banneraddbutton">Find</a>
+                                                            <a ><button type="button" class="btn bannerfindbutton">Post</a>
+                                                          </div>
+                                                          
+                                                         </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+
+
+                                             <div class="col-md-2 col-sm-2 col-xs-1"></div>
+
+                                             <div class="col-md-4 col-sm-12 col-xs-12 bannerdivtwo">
+                                                <div class="row">
+                                                  <div class="col-md-12 col-xs-12 col-sm-12">
+                                                    <div class="row">
+                                                      <div class="col-md-2 col-sm-2 col-xs-3">
+                                                        <img src="spotter/assets/img/default-avatar.png" alt=""class="bannerimageicondiv ">
+                                                      </div>
+                                                      <div class="col-md-10 col-sm-10 col-xs-9">
+                                                        <div class="row">
+                                                          <h1 class="bannerheadertitle ">Product Heading</h1>
+
+                                                       <p class="bannerheadersubtitle">
+                                                            All images and videos on Pixabay are released free of copyrights under 
+                                                            Creative Commons CC0.and use them royalty-free for anything you  
+                                                            Whatever you are </p>  
+                                                          <div class="row">
+                                                          <div class="col-md-12 col-sm-12 col-xs-12">
+                                                            <a><button type="button" class="btn banneraddbusinessbutton">Add Business</a>
+                                                            
+                                                          </div>
+                                                          
+                                                         </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+
+                                             <div class="col-md-1 col-sm-1 hidden-xs"></div>
+
+                                          </div> 
+                                          
+                                        
+                                        
+
+                                         
+                                       </div>
+                                    </div>
+                                    <!--/.row-->
+                                </section>
+                                <!--/.equal-height-->
+
+                                
+
+                            </div>
+                           
+                            <!--/.col-md-3-->
+                        </div>
+                        <!--/.row-->
+                    </div>
+                    <!--/.block-->
+              <div class="background">
+                        <img src="spotter/assets/img/restaurant-bg.jpg" alt="">
+                    </div>
+                </section>
+
+                <section class="block" id="the-team" style="background:#f9f9f9">
+                    <div class="container">
+                        <header><h2 style="font-size:25px;text-align:center;margin-top:40px;margin-bottom:50px;">See How It Works</h2></header>
+                        <div class="row itworksmaindiv">
+                            <div class="col-md-4 col-sm-3 col-xs-12 itworksmain">
+                                <div class="member itworksone">
+                                    <h1 class="itworkstitle">Chat</h1>
+
+                                    <img src="spotter/assets/img/iconscha.jpg" alt=""style="border-radius:0%;border:none">
+                                   <p>Curabitur odio nibh, luctus non pulvinar </p>
+                                </div>
+                                <!--/.member-->
+                            </div>
+                             <!--/.col-md-3-->
+                             <div class="col-md-4 col-sm-3 col-xs-12 itworksmain">
+                                <div class="member itworkstwo">
+                                    <h1  class="itworkstitle">Receive Quotes</h1>
+                                    <img src="spotter/assets/img/iconsquo.jpg" alt=""style="border-radius:0%;border:none">
+                                   <p>Curabitur odio nibh, luctus non pulvinar </p>
+                                </div>
+                                <!--/.member-->
+                            </div>
+                            
+                             <!--/.col-md-3-->
+                            <!--/.col-md-3-->
+                            <div class="col-md-4 col-sm-3 col-xs-12 itworksmain">
+                                <div class="member itworksthree">
+                                    <h1  class="itworkstitle">Seal The Deal</h1>
+                                    <img src="spotter/assets/img/iconsfiv.jpg" alt=""style="border-radius:0%;border:none">
+                                   <p>Curabitur odio nibh, luctus non pulvinar </p>
+                                </div>
+                                <!--/.member-->
+                            </div>
+                            <!--/.col-md-3-->
+                           
+                           
+                            <!--/.col-md-3-->
+                        </div>
+                        <!--/.row-->
+                    </div>
+                    <!--/.container-->
+                </section>
+
+                <section class="block" style="background:#fff">
+                    <div class="container whyfindsmdiv">
+                         <header><h2 style="font-size:25px;text-align:center;margin-top:20px;margin-bottom:50px;">Why Findsm?</h2></header>
+                        <div class="row">
+                             <div class="col-md-3 col-sm-3 col-xs-12"style="background:#fff;border:1px solid #f0f0f0;">
+                                <div class="member findsmsec">
+                                     <img src="spotter/assets/img/find.jpg" alt=""style="border-radius:0%;border:none">
+                                    <h4 class="findsmtitlesec">Find or Post Quickly</h4>
+                                    <hr>
+                                    <p>Curabitur odio nibh, luctus non pulvinar Curabitur odio nibh, luctus non pulvinar</p>
+                                    
+                                </div>
+                                <!--/.member-->
+                            </div>
+                            <!--/.col-md-3-->
+                            <div class="col-md-3 col-sm-3 col-xs-12"style="background:#fff;border:1px solid #f0f0f0;">
+                                <div class="member findsmsec">
+                                     <img src="spotter/assets/img/your-coice.jpg" alt=""style="border-radius:0%;border:none">
+                                    <h4>Your Budget Your Choice</h4>
+                                     <hr>
+                                   <p>Curabitur odio nibh, luctus non pulvinar Curabitur odio nibh, luctus non pulvinar</p>
+                                    
+                                    
+                                </div>
+                                <!--/.member-->
+                            </div>
+                            <!--/.col-md-3-->
+                            <div class="col-md-3 col-sm-3 col-xs-12"style="background:#fff;border:1px  solid #f0f0f0;">
+                                <div class="member findsmsec">
+                                    <img src="spotter/assets/img/connect.jpg" alt=""style="border-radius:0%;border:none">
+                                    <h4 class="findsmtitlesec">Connect Right Away</h4>
+                                     <hr>
+                                  <p>Curabitur odio nibh, luctus non pulvinar Curabitur odio nibh, luctus non pulvinar</p>
+                                    
+                                   
+                                </div>
+                                <!--/.member-->
+                            </div>
+                            <!--/.col-md-3-->
+                             <div class="col-md-3 col-sm-3 col-xs-12"style="background:#fff;border:1px solid #f0f0f0;">
+                                <div class="member findsmsec">
+                                     <img src="spotter/assets/img/ver.jpg" alt=""style="border-radius:0%;border:none">
+                                    <h4 class="findsmtitlesec">Verified Businesses</h4>
+                                     <hr>
+                                    <p>Curabitur odio nibh, luctus non pulvinar Curabitur odio nibh, luctus non pulvinar</p>
+                                    
+                                    
+                                </div>
+                                <!--/.member-->
+                            </div>
+                            <!--/.col-md-3-->
+                        </div>
+                        <!--/.row-->
+                    </div>
+                    <!--/.container-->
+                </section>
+
+                <section id="listing" class="block"style="background:#f9f9f9">
+                    <div class="container joinfindsmdiv">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <section class="equal-height">
+                                    <h2 style="font-size:25px;text-align:center;margin-top:20px;">Join findsm</h2>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                           
+                                          <p style="text-align:center;font-size:17px;">
+                                            Explore the most popular public domain stock photo site and share your best 
+                                            images and <br> videos with people all over the world.Sign up, it's free!</p>
+                                           <p style="text-align:center;padding-top:20px;"><a><button type="button" class="btn joinfindsmbutton">Sign Up</button></a></p>
+                                        </div>
+                                        
+
+                                         
+                                       
+                                    </div>
+                                    <!--/.row-->
+                                </section>
+                                <!--/.equal-height-->
+
+                                
+
+                            </div>
+                           
+                            <!--/.col-md-3-->
+                        </div>
+                        <!--/.row-->
+                    </div>
+                    <!--/.block-->
+                </section>
+
+                <section id="listing" class="block"style="background:#fff">
+                    <div class="container articalesdiv">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <section class="equal-height">
+                                    <header><h2 style="font-size:25px;text-align:center;margin-top:40px;margin-bottom:50px;">Tips and Articles</h2></header>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 ">
+                                            <div class="item ">
+                                                <div class="image tipsdivone">
+                                                    
+                                                    <a href="item-detail.html">
+                                                        
+                                                        <img src="spotter/assets/img/items/restaurant/p057.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <a href="item-detail.html"><h3>Music Entertainment's</h3></a>
+                                                    
+                                                    <div class="info">
+                                                        <div class="content">
+                                                            
+                                                            <p>October 20, 2015 Travelling</p>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.item-->
+                                        </div>
+                                        <!--/.col-sm-4-->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="item ">
+                                                <div class="image tipsdivone">
+                                                    
+                                                    <a href="item-detail.html">
+                                                       
+                                                        <img src="spotter/assets/img/items/restaurant/p055.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <a href="item-detail.html"><h3>Kid's School</h3></a>
+                                                    
+                                                    <div class="info">
+                                                        <div class="content">
+                                                           
+                                                            <p>October 10, 2015  Culture</p>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.item-->
+                                        </div>
+                                        <!--/.col-sm-4-->
+                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                            <div class="item ">
+                                                <div class="image tipsdivone">
+                                                   
+                                                    <a href="item-detail.html">
+                                                        
+                                                        
+                                                        <img src="spotter/assets/img/items/restaurant/p056.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="wrapper">
+                                                    <a href="item-detail.html"><h3>Decorators</h3></a>
+                                                    
+                                                    <div class="info">
+                                                        <div class="content">
+                                                            
+                                                            <span>September 17, 2015 Travelling</span>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.item-->
+                                        </div>
+                                        <!--/.col-sm-4-->
+
+                                         
+                                       
+                                    </div>
+                                    <!--/.row-->
+                                </section>
+                                <!--/.equal-height-->
+
+                                
+
+                            </div>
+                           
+                            <!--/.col-md-3-->
+                        </div>
+                        <!--/.row-->
+                    </div>
+                    <!--/.block-->
+                </section>                <!--end Listing-->
+
+                
+
+                <!--Partners-->
+               
+            
+                <!--end Partners-->
+          
+            </div>
+            <!-- end Page Content-->
+        </div>
+        <!-- end Page Canvas-->
+
+        <!--Page Footer-->
+        <div ng-view></div>
+             <footer id="page-footer" style="background:#2F2929"style="width:1500px;">
+            <div class="inner">
+                <div class="footer-top footersocialiconsdiv">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                <!--New Items-->
+                                
+                                <!--end New Items-->
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12 ">
+                                <!--Recent Reviews-->
+                              <section>
+                                  <div class="social">
+                                  <a href="#" class="social-button"><i class="fa fa-facebook "id="footericons"style="color:#FFF"></i></a>
+                                  <a href="#" class="social-button"><i class="fa fa-twitter "id="footericons"style="color:#FFF"></i></a>
+                                  <a href="#" class="social-button"><i class="fa fa-google-plus "id="footericons"style="color:#FFF"></i></a>
+                                  <a href="#" class="social-button"><i class="fa fa-pinterest "id="footericons"style="color:#FFF"></i></a>
+                                   <a href="#" class="social-button"><i class="fa fa-linkedin "id="footericons"style="color:#FFF"></i></a>
+                                </div>
+                                    <!--/.review-->
+                                </section>
+                                <!--end Recent Reviews-->
+                            </div>
+                            <div class="col-md-4 hidden-sm hidden-xs">
+                                
+                            </div>
+                            <!--/.col-md-4-->
+                        </div>
+                        <!--/.row-->
+                    </div>
+                    <!--/.container-->
+                </div>
+                <!--/.footer-top-->
+                <div class="footer-bottom"style="background:#261E1E">
+                    <div class="container">
+                        <span class="center" style="color:#fff">
+                           <p style="color:#fff">Copyright (C) 2016 Propeltree Technologies Pvt Ltd . <a href="spotterabout-us.html"class="footeraboutuscolor">About Us</a> . <a href="spottercontact.html"class="footercontactcolor">Contact Us</a></p>
+                           <p style="color:#fff;top:-5px;">Proudly powered by <a href="spotterabout-us.html" class="footerpropeltreetext">Propeltree Technologies Pvt Ltd</a></p>
+                        </span>
+                       
+                            <span class="right">
+                                <a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+                            </span>
+                    </div>
+                </div>
+                <!--/.footer-bottom-->
+            </div>
+          </footer>
+        <!--end Page Footer-->
+    </div>
+    <!-- end Inner Wrapper -->
+</div>
+<!-- end Outer Wrapper-->
+<script src="altair/assets/js/common.min.js"></script>
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <!-- uikit functions -->
+    <script src="altair/assets/js/uikit_custom.min.js"></script>
+    <!-- altair common functions/helpers -->
+    <script src="altair/assets/js/altair_admin_common.min.js"></script>
+<script src="altair/assets/js/kendoui_custom.min.js"></script>
+<script src="altair/assets/js/pages/kendoui.min.js"></script>
+<script src="bower_components/tablesorter/dist/js/jquery.tablesorter.min.js"></script>
+<script src="bower_components/tablesorter/dist/js/jquery.tablesorter.widgets.min.js"></script>
+<script src="bower_components/tablesorter/dist/js/widgets/widget-alignChar.min.js"></script>
+<script src="bower_components/tablesorter/dist/js/extras/jquery.tablesorter.pager.min.js"></script>
+<!-- <script type="text/javascript" src="shop/assets/js/jquery-2.1.0.min.js"></script> -->
+<script type="text/javascript" src="shop/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="shop/assets/lib/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="shop/assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="shop/assets/lib/owl.carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="shop/assets/lib/jquery.countdown/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="shop/assets/lib/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="shop/assets/js/jquery.actual.min.js"></script>
+<script type="text/javascript" src="shop/assets/lib/fancyBox/jquery.fancybox.js"></script>
+<script type="text/javascript" src="shop/assets/lib/jquery.elevatezoom.js"></script>
+<script type="text/javascript" src="shop/assets/js/theme-script.js"></script>
+
+<script type="text/javascript" src="spotter/assets/js/before.load.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+
+<!-- <script type="text/javascript" src="spotter/assets/bootstrap-selectp/js/bootstrap.min.js"></script> -->
+<script type="text/javascript" src="spotter/assets/js/smoothscroll.js"></script>
+
+<script type="text/javascript" src="spotter/assets/js/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="spotter/assets/js/jquery.hotkeys.js"></script>
+<script type="text/javascript" src="spotter/assets/js/jquery.nouislider.all.min.js"></script>
+<script type="text/javascript" src="spotter/assets/js/custom.js"></script>
+<script type="text/javascript" src="spotter/assets/js/maps.js"></script>
+<script type="text/javascript" src="assets/js/ng-img-crop.js"></script>
+<script src="assets/js/component.js"></script>
+<script>
+    $(window).load(function(){
+        var rtl = false; // Use RTL
+        initializeOwl(rtl);
+    });
+
+    autoComplete();
+</script>
+
+<!--[if lte IE 9]>
+<script type="text/javascript" src="assets/js/ie-scripts.js"></script>
+<![endif]-->
+</div>
+</div>
+</body>
+</html>

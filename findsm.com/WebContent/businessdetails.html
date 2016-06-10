@@ -1,0 +1,570 @@
+ <script> 
+	var myElements = document.querySelectorAll(".admin_sidebar");
+	for (var i = 0; i < myElements.length; i++) {
+	    myElements[i].style.display = "block";
+	}
+</script>
+<aside id="sidebar_main" class="admin_sidebar">
+  <a type="button"class="btn btn-success "id="adminsidebarmenu">Menu</a>
+        <a type="button"class="btn btn-success "id="sidebarsections"data-toggle="collapse" data-target="#collapse01">Master Data</a>
+                      <div id="collapse01">
+                        <ul class="panel list-unstyled" style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/admin"><li class="colorclass" style="color : #59D671;">Admin Table</li></a>
+                          <a href="#/partner"><li class="colorclass">Partner Table</li></a>
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success" id="sidebarsections" data-toggle="collapse"data-target="#collapse02">Category / Subcategory</a>
+                      <div id="collapse02" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/category_data"><li class="colorclass">Data Table</li></a>
+                          <a href="#/category_queue"><li class="colorclass">Queue Table</li></a>
+                             
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"id="sidebarsections" data-toggle="collapse" data-target="#collapse03">Product</a>
+                      <div id="collapse03" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/product_data"><li class="colorclass"> Data Table </li></a>
+                          <a href="#/product_queue"><li class="colorclass">Queue Table</li></a>
+                                 
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"id="sidebarsections" data-toggle="collapse" data-target="#collapse04">Service</a>
+                      <div id="collapse04" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/service_data"><li class="colorclass">Data Table </li></a>                        
+                          <a href="#/service_queue"><li class="colorclass">Queue Table</li></a>
+                                
+                        </ul>
+                      </div>
+                       <a type="button" class="btn btn-success"id="sidebarsections" data-toggle="collapse" data-target="#collapse05">City / Area</a>
+                      <div id="collapse05" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/city_area"><li class="colorclass">Data Table </li></a>
+                          <a href="#/city_queue"><li class="colorclass">Queue Table</li></a>
+                                
+                        </ul>
+                      </div>
+                        <a type="button" class="btn btn-success"id="sidebarsections" data-toggle="collapse" data-target="#collapse06">User Table</a>
+                      <div id="collapse06" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/user_table"><li class="colorclass">User Table </li></a>
+                          <li class="colorclass">Add Table</li>
+                                
+                        </ul>
+                      </div>     
+</aside>
+ <div id="page_content">
+        <div id="page_content_inner">
+           <div id="businessprofile"class="uk-grid" data-uk-grid-margin data-uk-grid-match id="user_profile">
+                <div class="uk-width-large-7-10" id="first">
+                    <div class="md-card">
+                        <div class="user_heading">
+                            <div class="user_heading_menu" data-uk-dropdown>
+                                <i class="md-icon material-icons md-icon-light">&#xE5D4;</i>
+                                <div class="uk-dropdown uk-dropdown-flip uk-dropdown-small">
+                                    <ul class="uk-nav">
+                                        <li><a href="#">Action 1</a></li>
+                                        <li><a href="#">Action 2</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="user_heading_avatar">
+                            <img ng-if="logo == false" src="altair/assets/img/avatars/user.png" alt="" style="border-radius:0%"/>
+                                <img ng-if="logo == true"ng-src="{{currentBusiness.logo}}" alt="" style="border-radius:0%"/>
+                            </div>
+                            <div class="user_heading_content">
+                                <h2 class="heading_b uk-margin-bottom"><span class="uk-text-truncate">{{currentBusiness.business_name}}</span><span class="sub-heading">{{currentBusiness.main_category}}</span></h2>
+                                
+                            </div>
+                            <a class="md-fab md-fab-small md-fab-accent" ng-click="editView()">
+                                <i class="material-icons">&#xE150;</i>
+                            </a>
+                        </div>
+                        <div class="user_content">
+                            <ul id="user_profile_tabs" class="uk-tab" data-uk-tab="{connect:'#user_profile_tabs_content', animation:'slide-horizontal'}">
+                                <li class="" ng-click="aboutClick();"><a>About</a></li>
+                               
+                                  <li class="" ng-click="photoClick();"><a>Photos</a></li> 
+                            </ul>
+                            <ul id="user_profile_tabs_content" class="uk-switcher uk-margin">
+                                <li id="details" style="display:block;">
+                                <p style="font-weight:bold;margin-left:15px">About us</p>
+                                    <p style="margin-left:15px">
+										{{currentBusiness.description}}
+                                    </p>
+                                    <p style="font-weight:bold;margin-left:15px">Short description</p>
+                                     <p style="margin-left:15px">
+                                        {{currentBusiness.short_desc}} 
+                                    </p>     
+                                    <h3 class="full_width_in_card heading_c">
+                                              General Info
+                                            </h3>   
+                                    <div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
+                                        <div class="uk-width-large-1-2">
+                                           
+                                            <ul class="md-list md-list-addon">
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons">&#xE158;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.main_category}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Category</span>
+                                                    </div>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                        </div>
+
+                                        <div class="uk-width-large-1-2">
+                                           
+                                            <ul class="md-list md-list-addon">
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons">&#xE158;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span ng-show="currentBusiness.sub_category1 != 'NA'">{{currentBusiness.sub_category1}}</span>
+<!--                                 	<span ng-show="currentBusiness.sub_category1 != 'NA' && currentBusiness.sub_category2 != 'NA'">,</span> -->
+                                	<span ng-show="currentBusiness.sub_category2 != 'NA'">{{currentBusiness.sub_category2}}</span>
+<!--                                 	<span ng-show="currentBusiness.sub_category2 != 'NA' && currentBusiness.sub_category3 != 'NA'">,</span> -->
+                                	<span ng-show="currentBusiness.sub_category3 != 'NA'">{{currentBusiness.sub_category3}}</span>
+<!--                                 	<span ng-show="currentBusiness.sub_category3 != 'NA' && currentBusiness.other_category1 != 'NA'">,</span> -->
+                                	<span ng-show="currentBusiness.other_category1 != 'NA'">{{currentBusiness.other_category1}}</span>
+<!--                                 	<span ng-show="currentBusiness.other_category1 != 'NA' && currentBusiness.other_category2 != 'NA'">,</span> -->
+                                	<span ng-show="currentBusiness.other_category2 != 'NA'">{{currentBusiness.other_category2}}</span>
+<!--                                 	<span ng-show="currentBusiness.other_category2 != 'NA' && currentBusiness.other_category3 != 'NA'">,</span> -->
+                                	<span ng-show="currentBusiness.other_category3 != 'NA'">{{currentBusiness.other_category3}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Sub category</span>
+                                                    </div>
+                                                </li>
+                                                
+                                                
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    
+                                    <h3 class="full_width_in_card heading_c">
+                                              Contact Info
+                                            </h3>
+                                      <div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
+                                        <div class="uk-width-large-1-2">
+                                            
+                                            <ul class="md-list md-list-addon">
+                                            <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.phone}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Phone</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons">&#xE158;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.email}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Email</span>
+                                                    </div>
+                                                </li>
+                                                
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon uk-icon-facebook-official"></i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.facebook}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Facebook</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon uk-icon-twitter"></i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.twitter}}</span>
+                                                        <span class="uk-text-small uk-text-muted">LinkedIn</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="uk-width-large-1-2">
+                                            
+                                            <ul class="md-list md-list-addon">
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.mobile}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Mobile</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon uk-icon-facebook-official"></i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.website}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Website</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon uk-icon-twitter"></i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.twitter}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Twitter</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon uk-icon-twitter"></i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.google_plus}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Google plus</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                      </div>
+
+                                      <h3 class="full_width_in_card heading_c">
+                                        Address
+                                      </h3>
+                                      <div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
+                                        <div class="uk-width-large-1-2">
+                                            
+                                            <ul class="md-list md-list-addon">
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons">&#xE158;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.street}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Street Name</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.state_name}}</span>
+                                                        <span class="uk-text-small uk-text-muted">State</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon uk-icon-facebook-official"></i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.zip}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Zipcode</span>
+                                                    </div>
+                                                </li>
+                                               
+                                            </ul>
+                                        </div>
+                                        <div class="uk-width-large-1-2">
+                                            
+                                            <ul class="md-list md-list-addon">
+                                               <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon uk-icon-facebook-official"></i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.area}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Area</span>
+                                                    </div>
+                                                </li>
+                                               <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon uk-icon-twitter"></i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.city}}</span>
+                                                        <span class="uk-text-small uk-text-muted">City</span>
+                                                    </div>
+                                                </li>
+                                                 <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon uk-icon-twitter"></i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">{{currentBusiness.landmark}}</span>
+                                                        <span class="uk-text-small uk-text-muted">Nearst Landmark</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                      
+                                      <h3 class="full_width_in_card heading_c">
+                                        Contact Person
+                                      </h3>
+                                      <div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
+                                        <div class="uk-width-large-1-2">
+                                            
+                                            <ul class="md-list md-list-addon">
+                                                <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons">&#xE158;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Name</span>
+                                                        <span class="uk-text-small uk-text-muted">John</span>
+                                                    </div>
+                                                </li>
+                                               <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon uk-icon-facebook-official"></i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Primary Phone.No</span>
+                                                        <span class="uk-text-small uk-text-muted">9564987480</span>
+                                                    </div>
+                                                </li>
+                                                
+                                               
+                                            </ul>
+                                        </div>
+                                        <div class="uk-width-large-1-2">
+                                            <ul class="md-list md-list-addon">
+                                               <li>
+                                                    <div class="md-list-addon-element">
+                                                        <i class="md-list-addon-icon material-icons">&#xE0CD;</i>
+                                                    </div>
+                                                    <div class="md-list-content">
+                                                        <span class="md-list-heading">Designation</span>
+                                                        <span class="uk-text-small uk-text-muted">Testing</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                      </div>
+                                       <h3 class="full_width_in_card heading_c">
+                                               Additional Info
+                                            </h3>
+                                      <div class="uk-grid uk-margin-medium-top uk-margin-large-bottom" data-uk-grid-margin>
+                                        <div class="uk-width-large-1-2">
+                                            <ul class="md-list ">
+                                                    <div class="md-list-content"style="margin-bottom:10px;">
+                                                        <span class="md-list-heading"style="font-weight:bold;">Products</span>
+                                                    </div>
+                                                <li ng-repeat="product in currentBusinessProducts">
+                                                    <div class="md-list-content">
+                                                        <span class="uk-text-small uk-text-muted">{{product.product_name}}</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="uk-width-large-1-2">
+                                            <ul class="md-list"style="margin-bottom:10px;">
+                                                    <div class="md-list-content"style="margin-bottom:10px;">
+                                                        <span class="md-list-heading"style="font-weight:bold;">Services</span>
+                                                    </div>
+                                                <li ng-repeat="service in currentBusinessServices">
+                                                    <div class="md-list-content">
+                                                        <span class="uk-text-small uk-text-muted">{{service.service_name}}</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                         <div class="uk-width-large-1-2">
+                                            
+                                            <ul class="md-list ">
+                                               
+                                                    
+                                                    <div class="md-list-content"style="margin-bottom:10px;">
+                                                        <span class="md-list-heading"style="font-weight:bold;">Opening hours</span>
+                                                        
+                                                    </div>
+                                               
+                                                <li>
+                                                   
+                                                    <div class="md-list-content">
+                                                        
+                                                        <span class="uk-text-small uk-text-muted"style="float:left">Monday </span>
+                                                         <span class="uk-text-small uk-text-muted"style="float:right">{{currentBusiness.monday_open}} to {{currentBusiness.monday_close}}</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    
+                                                    <div class="md-list-content">
+                                                        
+                                                      <span class="uk-text-small uk-text-muted"style="float:left">Tuesday </span>
+                                                         <span class="uk-text-small uk-text-muted"style="float:right">{{currentBusiness.tuesday_open}} to {{currentBusiness.tuesday_close}}</span>
+                                                    </div>
+                                                </li>
+                                                 <li>
+                                                   
+                                                    <div class="md-list-content">
+                                                        
+                                                       <span class="uk-text-small uk-text-muted"style="float:left">Wednesday </span>
+                                                         <span class="uk-text-small uk-text-muted"style="float:right">{{currentBusiness.wednesday_open}} to {{currentBusiness.wednesday_close}}</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    
+                                                    <div class="md-list-content">
+                                                        
+                                                        <span class="uk-text-small uk-text-muted"style="float:left">Tursday </span>
+                                                         <span class="uk-text-small uk-text-muted"style="float:right">{{currentBusiness.thursday_open}} to {{currentBusiness.thursday_close}}</span>
+                                                    </div>
+                                                </li>
+                                                 <li>
+                                                    
+                                                    <div class="md-list-content">
+                                                        
+                                                       <span class="uk-text-small uk-text-muted"style="float:left">Friday </span>
+                                                         <span class="uk-text-small uk-text-muted"style="float:right">{{currentBusiness.friday_open}} to {{currentBusiness.friday_close}}</span>
+                                                    </div>
+                                                </li>
+                                                 <li>
+                                                    
+                                                    <div class="md-list-content">
+                                                      <span class="uk-text-small uk-text-muted"style="float:left">Saturday </span>
+                                                         <span class="uk-text-small uk-text-muted"style="float:right">{{currentBusiness.saturday_open}} to {{currentBusiness.saturday_close}}</span>
+                                                    </div>
+                                                </li>
+                                                 <li>
+                                                    
+                                                    <div class="md-list-content">
+                                                        
+                                                        <span class="uk-text-small uk-text-muted"style="float:left">Sunday </span>
+                                                         <span class="uk-text-small uk-text-muted"style="float:right">{{currentBusiness.sunday_open}} to {{currentBusiness.sunday_close}}</span>
+                                                    </div>
+                                                </li>
+                                               
+                                            </ul>
+                                        </div>
+                                        
+                                      </div>
+
+
+
+                                </li>
+                                <li id="gallery">
+                                    <div id="user_profile_gallery" data-uk-check-display class="uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-4" data-uk-grid="{gutter: 4}">
+                                        <div ng-repeat="image in businessImages">
+                                            <a ng-href="{{image.image}}" data-uk-lightbox="{group:'user-photos'}" style="padding:20px;">
+                                                <img ng-src="{{image.image}}" alt="not loading"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-width-large-3-10" id="second">
+                  <div class="md-card">
+                    <div>
+                    <div class="md-card md-card-hover">
+                      
+
+                            <div class="gallery_grid_item md-card-content">
+                            <a href="{{currentBusiness.dp}}" data-uk-lightbox="{group:'gallery'}">
+                                <img ng-src="{{currentBusiness.dp}}" alt="" align="center">
+                            </a>
+                            <div class="gallery_grid_image_caption">
+                                <div class="gallery_grid_image_menu" data-uk-dropdown="{pos:'top-right'}">
+                                    <i class="md-icon material-icons">&#xE5D4;</i>
+                                    <div class="uk-dropdown uk-dropdown-small">
+                                        <ul class="uk-nav">
+                                            <li><a href="#"><i class="material-icons uk-margin-small-right">&#xE150;</i> Edit</a></li>
+                                            <li><a href="#"><i class="material-icons uk-margin-small-right">&#xE872;</i> Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <span class="gallery_image_title uk-text-truncate">Featured Image</span>
+                                <span class="uk-text-muted uk-text-small">7 Jun 2016, 91KB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  </div>
+                    <div class="md-card">
+                        <div class="md-card-content">
+                            <div class="uk-margin-medium-bottom">
+                                <h3 class="heading_c uk-margin-bottom">Alerts</h3>
+                                <ul class="md-list md-list-addon">
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-warning">&#xE8B2;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Cum ipsam.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Eos iusto voluptatem alias autem est qui.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-success">&#xE88F;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Nemo provident.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Vitae aperiam laboriosam sed perspiciatis.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="md-list-addon-element">
+                                            <i class="md-list-addon-icon material-icons uk-text-danger">&#xE001;</i>
+                                        </div>
+                                        <div class="md-list-content">
+                                            <span class="md-list-heading">Vero ut quaerat.</span>
+                                            <span class="uk-text-small uk-text-muted uk-text-truncate">Atque dolores sint nihil velit.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="heading_c uk-margin-bottom">Friends</h3>
+                            <ul class="md-list md-list-addon uk-margin-bottom">
+                                <li>
+                                    <div class="md-list-addon-element">
+                                        <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_02_tn.png" alt=""/>
+                                    </div>
+                                    <div class="md-list-content">
+                                        <span class="md-list-heading">Mr. Ahmad Braun II</span>
+                                        <span class="uk-text-small uk-text-muted">Et eius minus omnis dolorum.</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="md-list-addon-element">
+                                        <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_07_tn.png" alt=""/>
+                                    </div>
+                                    <div class="md-list-content">
+                                        <span class="md-list-heading">Michael Strosin DVM</span>
+                                        <span class="uk-text-small uk-text-muted">Iste voluptas libero illum voluptatem aut.</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="md-list-addon-element">
+                                        <img class="md-user-image md-list-addon-avatar" src="altair/assets/img/avatars/avatar_06_tn.png" alt=""/>
+                                    </div>
+                                    <div class="md-list-content">
+                                        <span class="md-list-heading">Andy Spencer DDS</span>
+                                        <span class="uk-text-small uk-text-muted">Iste quasi consectetur est qui.</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="md-btn md-btn-flat md-btn-flat-primary" href="#">Show all</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>

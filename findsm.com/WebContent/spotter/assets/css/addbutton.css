@@ -1,0 +1,746 @@
+ a.addbuttonnavigationexpand {
+  background: none repeat scroll 0 0 #FEBD69;
+  color: #222;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  height: 20px;
+  margin-right: 5px;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 53px;
+  border-radius:3px;
+  width: 90px;
+  z-index: 1001;
+
+}
+.addbuttonaddbuttonnav-header :hover
+{
+  background:#EFAF5D;
+}
+addbuttonnav {
+  background: #202529;
+    opacity: 0.96;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -128em;
+  font-size: 15px;
+  top: 0;
+  width: 127em;
+  z-index: 2000;
+
+  transition: right 0.12s ease-in-out 0s;
+  -webkit-transition: right 0.12s ease-in-out 0s;
+  -moz-transition: right 0.12s ease-in-out 0s;
+  -o-transition: right 0.12s ease-in-out 0s;
+
+}
+.addbuttonnav-expanded addbuttonnav {
+  right: 0;
+}
+
+body.addbuttonnav-expanded {
+  margin-left: 0em;
+  transition: right 0.12s ease-in-out 0s;
+  -webkit-transition: right 0.12s ease-in-out 0s;
+  -moz-transition: right 0.12s ease-in-out 0s;
+  -o-transition: right 0.12s ease-in-out 0s;
+}
+
+#addbuttonnav-close {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+a.addbuttonnavigationexpand:hover {
+  cursor: pointer;
+
+}
+
+a.addbuttonnavigationexpand.fixed {
+  position: fixed;
+}
+
+.addbuttonnav-expanded a.addbuttonnavigationexpand.fixed {
+    right: 0em;
+}
+.addbuttonmenu {
+  padding-top: 12px;
+ 
+
+}
+
+.addbuttonmenu li {
+  border-bottom: 1px solid #323949;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 12px;
+
+}
+
+.addbuttonmenu li a {
+  color: #6F7D8C;
+  text-decoration: none;
+}
+
+.addbuttonmenu li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.addbuttonmenu li .sub-addbuttonnav {
+  border-bottom: 0px;
+  padding: 4px;
+}
+
+.addbuttonmenu a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+    margin-top: 8px;
+}
+
+.addbuttonmenu a:hover .caret {
+  border-top-color: #4f5963;
+}
+
+.addbuttonmenu li.open > a > .caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.addbuttonmenu li.open > a:hover > .caret {
+  border-bottom-color: #4f5963;
+}
+
+.icon:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '\f105';
+}
+
+.addbuttonmenu li > a > span.icon {
+  float: right;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.addbuttonmenu li > a:hover > span.icon {
+  float: right;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+.addbuttoncategorydiv
+{
+  height:300px;right:-200px;
+}
+.addbuttoncategoryone,.addbuttoncategorythree
+{
+  height:150px;color:#FEBD69;text-align:center;border:0.5px solid #7F8083;margin:7px;
+}
+.addbuttoncategoryone:hover
+{
+  background: #009DC7;
+  color: #fff;
+}
+.addbuttoncategorythree:hover 
+{
+   background: #009DC7;
+   color: #fff;
+}
+.addbuttoncategorytwo,.addbuttoncategoryfour
+{
+  height:150px;color:#009dc7;text-align:center;border:0.5px solid #7F8083;right:-10px;
+}
+.addbuttoncategoryfive
+{
+  height:150px;color:#009dc7;text-align:center;border:0.5px solid #7F8083;padding-left: 10px;
+}
+.addbuttoncategorytwo:hover
+{
+  background: #009DC7;
+  color: #fff;
+}
+.addbuttoncategoryfour:hover
+{
+  background: #009DC7;
+  color: #fff;
+}
+.addbuttoncategoryonetitle,.addbuttoncategorytwotitle,.addbuttoncategorythreetitle,.addbuttoncategoryfourtitle
+{
+  font-size:25px;padding-top:30px;
+}
+
+/*! Send a message button in details page*/
+
+  a.sendmessagebuttonnavigationexpand {
+  background: none repeat scroll 0 0 #000000;
+  color: #FFFFFF;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  transition: right 0.3s ease-in-out 0s;
+  width: 130px;
+  z-index: 12;
+
+  transition: right 0.12s ease-in-out 0s;
+  -webkit-transition: right 0.12s ease-in-out 0s;
+  -moz-transition: right 0.12s ease-in-out 0s;
+  -o-transition: right 0.12s ease-in-out 0s;
+
+}
+sendmessagebuttonnav {
+  background: #2d2f33;
+   opacity: 0.96;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -128em;
+  font-size: 15px;
+  top: 0;
+  width: 127em;
+  z-index: 2000;
+
+  transition: right 0.12s ease-in-out 0s;
+  -webkit-transition: right 0.12s ease-in-out 0s;
+  -moz-transition: right 0.12s ease-in-out 0s;
+  -o-transition: right 0.12s ease-in-out 0s;
+
+}
+.sendmessagebuttonnav-expanded sendmessagebuttonnav {
+  right: 0;
+}
+
+body.sendmessagebuttonnav-expanded {
+  margin-left: 0em;
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+
+#sendmessagebuttonnav-close {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-right: 10px;
+}
+a.sendmessagebuttonnavigationexpand:hover {
+  cursor: pointer;
+}
+
+a.sendmessagebuttonnavigationexpand.fixed {
+  position: fixed;
+}
+
+.sendmessagebuttonnav-expanded a.sendmessagebuttonnavigationexpand.fixed {
+    right: 20em;
+}
+.sendmessagebuttonmenu {
+  padding-top: 12px;
+}
+
+.sendmessagebuttonmenu li {
+  border-bottom: 1px solid #323949;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.sendmessagebuttonmenu li a {
+  color: #6F7D8C;
+  text-decoration: none;
+}
+
+.sendmessagebuttonmenu li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.sendmessagebuttonmenu li .sub-sendmessagebuttonnav {
+  border-bottom: 0px;
+  padding: 4px;
+}
+
+.sendmessagebuttonmenu a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+    margin-top: 8px;
+}
+
+.sendmessagebuttonmenu a:hover .caret {
+  border-top-color: #4f5963;
+}
+
+.sendmessagebuttonmenu li.open > a > .caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.sendmessagebuttonmenu li.open > a:hover > .caret {
+  border-bottom-color: #4f5963;
+}
+
+.icon:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '\f105';
+}
+
+.sendmessagebuttonmenu li > a > span.icon {
+  float: right;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.sendmessagebuttonmenu li > a:hover > span.icon {
+  float: right;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+
+/*! contact button in details page*/
+
+a.contactbuttonnavigationexpand {
+  background: none repeat scroll 0 0 #000000;
+  color: #FFFFFF;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-top: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  top: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+ 
+  transition: top 0.3s ease-in-out 0s;
+  width: 130px;
+  z-index: 12;
+
+  transition: top 0.12s ease-in-out 0s;
+  -webkit-transition: top 0.12s ease-in-out 0s;
+  -moz-transition: top 0.12s ease-in-out 0s;
+  -o-transition: top 0.12s ease-in-out 0s;
+
+}
+contactbuttonnav {
+  background: #2d2f33;
+  opacity: 0.97;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  top: -127em;
+  font-size: 15px;
+ 
+  width: 127em;
+  z-index: 2000;
+
+  transition: top 0.12s ease-in-out 0s;
+  -webkit-transition: top 0.12s ease-in-out 0s;
+  -moz-transition: top 0.12s ease-in-out 0s;
+  -o-transition: top 0.12s ease-in-out 0s;
+
+}
+.contactbuttonnav-expanded contactbuttonnav {
+  top: 0;
+}
+
+body.contactbuttonnav-expanded {
+  margin-left: 0em;
+  transition: top 0.4s ease-in-out 0s;
+  -webkit-transition: top 0.4s ease-in-out 0s;
+  -moz-transition: top 0.4s ease-in-out 0s;
+  -o-transition: top 0.4s ease-in-out 0s;
+}
+
+#contactbuttonnav-close {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-top: 10px;
+}
+a.contactbuttonnavigationexpand:hover {
+  cursor: pointer;
+}
+
+a.contactbuttonnavigationexpand.fixed {
+  position: fixed;
+}
+
+.contactbuttonnav-expanded a.contactbuttonnavigationexpand.fixed {
+    top: 20em;
+}
+.contactbuttonmenu {
+  padding-top: 12px;
+}
+
+.contactbuttonmenu li {
+  border-bottom: 1px solid #323949;
+  margin-left: 20px;
+  font-size: 18px;
+  padding: 12px;
+}
+
+.contactbuttonmenu li a {
+  color: #6F7D8C;
+  text-decoration: none;
+}
+
+.contactbuttonmenu li a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.contactbuttonmenu li .sub-contactbuttonnav {
+  border-bottom: 0px;
+  padding: 4px;
+}
+
+.contactbuttonmenu a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-top: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+    margin-top: 8px;
+}
+
+.contactbuttonmenu a:hover .caret {
+  border-top-color: #4f5963;
+}
+
+.contactbuttonmenu li.open > a > .caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-top: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.contactbuttonmenu li.open > a:hover > .caret {
+  border-bottom-color: #4f5963;
+}
+
+.icon:before {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '\f105';
+}
+
+.contactbuttonmenu li > a > span.icon {
+  float: top;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+
+.contactbuttonmenu li > a:hover > span.icon {
+  float: top;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+
+/*! add button media */
+
+@media(max-width: 1700px){
+
+ 
+  .addbuttoncategorydiv
+  {
+   
+ margin-left: 135px;
+  }
+  }
+  @media(max-width: 1500px){
+
+ 
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 185px;
+  }
+  }
+   @media(max-width: 1328px){
+
+ 
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 335px;
+  }
+  }
+  @media(max-width: 1100px){
+
+ 
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 385px;
+  }
+  }
+    @media(max-width: 1024px){
+
+ 
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 425px;
+  }
+  }
+@media(max-width: 991px){
+  a.addbuttonnavigationexpand {
+  background: none repeat scroll 0 0 #FEBD69;
+  color: #222;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  height: 20px;
+  margin-right: 5px;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  right: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 50px;
+  border-radius:3px;
+  width: 90px;
+  z-index: 1001;
+ 
+
+}
+
+  addbuttonnav {
+   width: 90em;
+  right: -128em;
+  }
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 120px;
+  }
+  .addbuttoncategoryonetitle,.addbuttoncategorytwotitle,.addbuttoncategorythreetitle,.addbuttoncategoryfourtitle
+  {
+    font-size: 22px;
+  }
+  }
+
+@media(max-width: 878px){
+
+  
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 215px;
+  }
+  }
+@media(max-width: 837px){
+
+ 
+  .addbuttoncategorydiv
+  {
+   
+    margin-left: 180px;
+  }
+  }
+@media(max-width: 767px){
+
+  addbuttonnav {
+   width: 90em;
+   right: -128em;
+  }
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 50%;
+    margin-left: 425px;
+  }
+ 
+  .addbuttoncategoryonetitle,.addbuttoncategorytwotitle,.addbuttoncategorythreetitle,.addbuttoncategoryfourtitle
+  {
+    font-size: 26px;
+  }
+  }
+  @media(max-width: 750px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 50%;
+    margin-left: 430px;
+  }
+
+  }
+   @media(max-width: 738px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 45%;
+    margin-left:470px;
+  }
+
+  }
+  @media(max-width: 708px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 45%;
+    margin-left:490px;
+  }
+
+  }
+  @media(max-width: 674px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 40%;
+    margin-left:540px;
+  }
+  }
+  @media(max-width: 620px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 35%;
+     margin-left:610px;
+  }
+
+  }
+   @media(max-width: 568px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 30%;
+     margin-left:660px;
+  }
+
+  }
+   @media(max-width: 508px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 26%;
+      margin-left:730px;
+  }
+
+  }
+@media(max-width: 480px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 22%;
+    margin-left:760px;
+  }
+
+  }
+
+@media(max-width: 420px){
+
+  .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 20%;
+     margin-left:800px;
+  }
+
+  }
+  @media(max-width: 380px){
+
+  .addbuttoncategorydiv
+  {
+    
+    margin-left: 820px;
+  }
+
+  }
+   @media(max-width: 350px){
+
+  .addbuttoncategorydiv
+  {
+    
+   margin-left:840px;
+  }
+
+  }
+  @media(max-width: 320px){
+
+    .addbuttoncategorydiv
+  {
+    top: -150px;
+    width: 18%;
+    margin-left: 880px;
+  }
+  .addbuttoncategoryonetitle,.addbuttoncategorytwotitle,.addbuttoncategorythreetitle,.addbuttoncategoryfourtitle
+{
+  font-size:25px;padding-top:40px;
+}
+}
+
+<!--/addbutton css-->

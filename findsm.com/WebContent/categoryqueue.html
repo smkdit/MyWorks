@@ -1,0 +1,120 @@
+<script> 
+	var myElements = document.querySelectorAll(".admin_sidebar");
+	for (var i = 0; i < myElements.length; i++) {
+	    myElements[i].style.display = "block";
+	}
+</script>
+<aside id="sidebar_main" class="admin_sidebar">
+  <a type="button"class="btn btn-success "id="adminsidebarmenu">Menu</a>
+        <a type="button"class="btn btn-success "id="sidebarsections"data-toggle="collapse" data-target="#collapse01">Master Data</a>
+                      <div id="collapse01"  class="collapse">
+                        <ul class="panel list-unstyled" style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/admin"><li class="colorclass">Admin Table</li></a>
+                          <a href="#/partner"><li class="colorclass">Partner Table</li></a>
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success" id="sidebarsections" data-toggle="collapse"data-target="#collapse02">Category / Subcategory</a>
+                      <div id="collapse02">
+                        <ul class="panel list-unstyled" style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/category_data"><li class="colorclass" >Data Table</li></a>
+                          <a href="#/category_queue"><li class="colorclass" style="color : #59D671;">Queue Table</li></a>
+                             
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"id="sidebarsections" data-toggle="collapse" data-target="#collapse03">Product</a>
+                      <div id="collapse03" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/product_data"><li class="colorclass"> Data Table </li></a>
+                          <a href="#/product_queue"><li class="colorclass">Queue Table</li></a>
+                                 
+                        </ul>
+                      </div>
+                      <a type="button" class="btn btn-success"id="sidebarsections" data-toggle="collapse" data-target="#collapse04">Service</a>
+                      <div id="collapse04" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/service_data"><li class="colorclass">Data Table </li></a>                        
+                          <a href="#/service_queue"><li class="colorclass">Queue Table</li></a>
+                                
+                        </ul>
+                      </div>
+                       <a type="button" class="btn btn-success"id="sidebarsections" data-toggle="collapse" data-target="#collapse05">City / Area</a>
+                      <div id="collapse05" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/city_area"><li class="colorclass">Data Table </li></a>
+                          <a href="#/city_queue"><li class="colorclass">Queue Table</li></a>
+                                
+                        </ul>
+                      </div>
+                        <a type="button" class="btn btn-success"id="sidebarsections" data-toggle="collapse" data-target="#collapse06">User Table</a>
+                      <div id="collapse06" class="collapse ">
+                        <ul class="panel list-unstyled"style="padding:10px;margin-bottom:-1px;">
+                          <a href="#/user_table"><li class="colorclass">User Table </li></a>
+                          <li class="colorclass">Add Table</li>
+                                
+                        </ul>
+                      </div>     
+</aside>
+<div id="page_content">
+        <div id="page_content_inner">
+			<div class="md-card">
+                <div class="md-card-content">
+                    <div class="uk-grid" data-uk-grid-margin="">
+            <label style="width:8%;float:left;margin-top:8px;">Search Key</label>
+                    	<input type="text" class="form-control" style="width:25%;float:left;" ng-model="searchKey">
+                	</div>
+                	</div>
+                	</div>
+            <div class="md-card">
+                <div class="md-card-content">
+                    <div class="uk-overflow-container uk-margin-bottom">
+                        <table class="uk-table uk-table-align-vertical uk-table-nowrap tablesorter tablesorter-altair">
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" class="ts_checkbox_all"></th>
+                                <th>Category</th>
+                                <th>Sub_category</th>
+                                <th class="filter-false remove sorter-false">Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="list in newSubCategory | filter:searchKey track by list.sub_category">
+                                <td><input type="checkbox" data-md-icheck class="ts_checkbox"></td>
+                                
+                                <td>{{list.category}}</td>
+                                <td>{{list.sub_category}}</td>
+                             
+                                <td class="uk-text-nowrap">
+                                 <button style="margin-left:20px;margin-right:20px;background:#777;color:#fff"type="button" class="md-btn" ng-click="myFunction(list.sub_category)">Edit</button>
+                                  
+                                 <button type="button" class="md-btn" ng-click="approval(list.sub_category)" style="margin-left:20px;margin-right:20px;background:#7CB342;color:#fff">Approved</button>
+                                   <button type="button" class="md-btn" onclick="UIkit.modal.confirm('Are you sure, Do you Want to Delete?', function(){ UIkit.modal.alert('Confirmed!'); });"style="margin-left:20px;margin-right:20px;background:#e53935;color:#fff">Delete</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ul class="uk-pagination ts_pager">
+                        <li data-uk-tooltip title="Select Page">
+                            <select class="ts_gotoPage ts_selectize"></select>
+                        </li>
+                        <li class="first"><a href="javascript:void(0)"><i class="uk-icon-angle-double-left"></i></a></li>
+                        <li class="prev"><a href="javascript:void(0)"><i class="uk-icon-angle-left"></i></a></li>
+                        <li><span class="pagedisplay"></span></li>
+                        <li class="next"><a href="javascript:void(0)"><i class="uk-icon-angle-right"></i></a></li>
+                        <li class="last"><a href="javascript:void(0)"><i class="uk-icon-angle-double-right"></i></a></li>
+                        <li data-uk-tooltip title="Page Size">
+                            <select class="pagesize ts_selectize">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        
+
+        </div>
+    </div>

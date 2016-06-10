@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<div class="content">
+    <div class="container">
+        <form class="main-search" role="form" method="post" action="?" >
+            <div class="input-row">
+                 <div class="container">
+                                <div class="row"> 
+                                  <div class=" col-md-2 col-sm-2 col-lg-2">
+                                    <input type="text" name="product" list="productName"placeholder="Location"/ class="homepagelocation"style="border:1px solid black;">
+                                    <datalist id="productName">
+                                      <option value="chennai">chennai</option>
+                                      <option value="Kanchipuram">Kanchipuram</option>
+                                      <option value="Trichy">Trichy</option>
+                                    </datalist>
+                                </div>   
+                              <div class="col-md-9 col-sm-9 col-lg-9">
+
+                                <div class="input-group">
+                                    <div class="input-group-btn search-panel">
+                  
+
+                                      <button type="button" class="btn btn-default dropdown-toggle"style="width:60px;height:40px;background-color:#F3F3F3;color:black;border:1px solid #222;"data-toggle="dropdown">
+                                      <span id="search_concept">ALL</span> <span class="caret"></span>
+                                      </button>
+                                      <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#contains">Wedding</a></li>
+                                        <li><a href="#its_equal">Restaurant</a></li>
+                                        <li><a href="#greather_than">Photography</a></li>
+                                        <li><a href="#less_than">Travels</a></li>
+                                        
+                                        <li><a href="#all">Anything</a></li>
+                                      </ul>
+                                  </div>
+                                  
+                                            
+                                  <input type="text" class="form-control"style="border:1px solid #222;" name="x" placeholder="Search term...">
+                                    
+                                  <span class="input-group-btn">
+                                <button class="btn btn-default"style="height:40px;background-color:#FEBD69;color:black;border:1px solid #222;" type="button"><span class="glyphicon glyphicon-search"style="font-size:20px;"></span></button>
+ 
+                              </span>
+                            </div>
+                           </div>
+                <!-- /.form-group -->
+            </div>
+        </form>
+        <!-- /.main-search -->
+    </div>
+    <!-- /.container -->
+</div>
+
+
+<script>
+    $('select').selectpicker('render');
+</script>
+
+<!--[if lte IE 9]>
+<script type="text/javascript" src="assets/js/ie-scripts.js"></script>
+<![endif]-->
+</body>
+</html>
